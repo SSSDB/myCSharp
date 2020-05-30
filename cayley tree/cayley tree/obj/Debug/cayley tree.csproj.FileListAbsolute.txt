@@ -1,0 +1,8 @@
+C:\Users\86150\Desktop\cayley tree\cayley tree\bin\Debug\cayley tree.exe
+C:\Users\86150\Desktop\cayley tree\cayley tree\bin\Debug\cayley tree.pdb
+C:\Users\86150\Desktop\cayley tree\cayley tree\bin\Debug\cayley tree.exe.config
+C:\Users\86150\Desktop\cayley tree\cayley tree\obj\Debug\cayley_tree.Form1.resources
+C:\Users\86150\Desktop\cayley tree\cayley tree\obj\Debug\cayley_tree.Properties.Resources.resources
+C:\Users\86150\Desktop\cayley tree\cayley tree\obj\Debug\cayley tree.csproj.GenerateResource.cache
+C:\Users\86150\Desktop\cayley tree\cayley tree\obj\Debug\cayley tree.exe
+C:\Users\86150\Desktop\cayley tree\cayley tree\obj\Debug\cayley tree.pdb
