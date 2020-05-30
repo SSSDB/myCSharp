@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mike_Zhang - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=KCO3_f2W_TC__-jZ7phSnmoFkQuWMJH2yAgA16eE3eY" />
+    <link id="MainCss" rel="stylesheet" href="/skins/sea/bundle-sea.min.css?v=Jpv_XRZqv7HnW0FXxHohZmb1TG6nYuWdNSwqJML5lHA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea-mobile.min.css?v=GEzW0neGdNE-VMws0ftJENKA__n-moeEPmS2Y9XCJis" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/MikeZhang/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/MikeZhang/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/MikeZhang/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=6bwfCY2e02dLOXNW99G2BHZkYFmw9QyYTWeJ-W-sudo"></script>
+    <script>
+        var currentBlogId = 98232;
+        var currentBlogApp = 'MikeZhang';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'sea';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <a href="https://github.com/mike-zhang/mikeBlogEssays"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    </div>
+    <!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/MikeZhang/"></a>
+<br>
+		
+
+
+	</div>
+</div>
+
+
+</div>
+
+<div id="mytopmenu">
+	
+		<div id="mylinks">
+<a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+ &nbsp;
+
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/MikeZhang/">
+首页</a>
+ &nbsp;
+
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+ &nbsp;
+
+ &nbsp;
+
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/MikeZhang/rss/">
+订阅</a>
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/MikeZhang/rss/">
+    <img src="/skins/sea/images/xml.gif" alt="订阅" />
+</a>&nbsp;
+
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+
+</div>
+		<DIV id="mystats">随笔-
+198&nbsp;
+评论-
+268&nbsp;
+文章-
+0&nbsp;
+<!--trackbacks-<partial name="./Shared/_PingTrackCount.cshtml" model="BlogServer.Web.Models.HomeBlogPage" />-->
+
+</DIV>
+	
+</div>
+<div id="centercontent">
+	
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/01/22.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年1月22日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/blogIndex.html">
+[置顶]    博客索引
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：InfluxDB相关： https://www.cnblogs.com/MikeZhang/tag/influxdb/ 视频技术相关： https://www.cnblogs.com/MikeZhang/category/393593.html voip技术相关： https://www.cnblo            <a href="https://www.cnblogs.com/MikeZhang/p/blogIndex.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-01-22 12:55
+Mike_Zhang
+<span class="post-view-count">阅读(148)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10303193" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2020/05/30.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2020年5月30日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/stereo2mono-20200530.html">
+    双声道合并为单声道
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ：Windows10_x64 &amp;&amp; CentOS7.7.1908_x64 声道(Sound Channel) 是指声音在录制或播放时在不同空间位置采集或回放的相互独立的音频信号，所以声道数也就是声音录制时的音源数量或回放时相应的扬声器数量。 背景描述 在VoIP语音通信过程中，将通话中的两            <a href="https://www.cnblogs.com/MikeZhang/p/stereo2mono-20200530.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2020-05-30 22:42
+Mike_Zhang
+<span class="post-view-count">阅读(9)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12995320" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2020/05/29.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2020年5月29日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/raspi-ubuntu-set-wlan-20200529.html">
+    树莓派命令行配置无线网络
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：树莓派版本： Raspberry Pi 4B 操作系统 ： Ubuntu Server 20.04_x64 使用 ip a 查看无线网卡名称： ubuntu@ubuntu:~$ ip a 1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue st            <a href="https://www.cnblogs.com/MikeZhang/p/raspi-ubuntu-set-wlan-20200529.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2020-05-29 23:17
+Mike_Zhang
+<span class="post-view-count">阅读(16)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12990113" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2020/05/24.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2020年5月24日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/raspi_install_ubuntu_20200524.html">
+    树莓派安装Ubuntu系统
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：树莓派版本： Raspberry Pi 4B 操作系统 ： Ubuntu Server 20.04_x64 树莓派官网：&#160;https://www.raspberrypi.org/ ubuntu官网：&#160;https://ubuntu.com/ 下载并安装系统 下载镜像：&#160;https://ubuntu.c            <a href="https://www.cnblogs.com/MikeZhang/p/raspi_install_ubuntu_20200524.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2020-05-24 21:14
+Mike_Zhang
+<span class="post-view-count">阅读(57)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12952702" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/11/28.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年11月28日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/python-use-kafka-20191128.html">
+    python访问kafka
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： CentOS7.3.1611_x64 Python 版本 : 3.6.8 kafka 版本 ： 2.3.1 本文记录python访问kafka的简单使用，是入门教程，高阶读者请直接忽略。 下载并启动kafka kafka官方网址：&#160;http://kafka.apache.org/ 下载            <a href="https://www.cnblogs.com/MikeZhang/p/python-use-kafka-20191128.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-11-28 20:51
+Mike_Zhang
+<span class="post-view-count">阅读(211)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11953670" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/11/23.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年11月23日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/docker-pack-python-20191123.html">
+    docker打包python应用
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： CentOS7.5.1804_x64 docker版本 ： 18.06.3-ce 本文描述了怎么将简单的python应用打包成docker镜像的过程。 本文涉及文件目录结构如下： 文件说明： httpServer_snaic1.py内容如下： requirements.txt内容如下：            <a href="https://www.cnblogs.com/MikeZhang/p/docker-pack-python-20191123.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-11-23 23:03
+Mike_Zhang
+<span class="post-view-count">阅读(641)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11920693" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/11/21.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年11月21日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/docker_20191121.html">
+    docker常用命令
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：查看docker信息 搜索镜像包 比如 ： 下载镜像包 使用命令 docker pull 来下载镜像。 比如： 删除已下载镜像 创建一个新的容器并运行一个命令 比如，前台运行： 后台运行： 后台运行并进行端口映射： 进入正运行的容器 比如： 查看运行容器列表 比如， 查看当前运行容器列表： dock            <a href="https://www.cnblogs.com/MikeZhang/p/docker_20191121.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-11-21 20:55
+Mike_Zhang
+<span class="post-view-count">阅读(69)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11908298" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/11/17.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年11月17日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/centos7_install_docker_20191117.html">
+    CentOS7环境下安装docker
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： CentOS7.5.1804_x64 docker版本： docker-ce-18.06.3 准备环境 1、如之前安装过移除老旧版本 2、使用阿里镜像库安装 安装docker 1、安装 2、启动 3、验证是否安装成功 使用docker镜像 1、配置镜像加速 对应文件 ： /etc/do            <a href="https://www.cnblogs.com/MikeZhang/p/centos7_install_docker_20191117.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-11-17 21:35
+Mike_Zhang
+<span class="post-view-count">阅读(128)</span><text> </text>
+<span class="post-comment-count">评论(1)</span><text> </text>
+<span class="post-digg-count">推荐(1)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11878383" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/11/02.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年11月2日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/sanic_vs_tornado_20191102.html">
+    sanic和tornado的简单性能测试
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： CentOS7.3.1611_x64 Python 版本 : 3.6.8 tornado版本：6.0.2 sanic版本：19.9.0 CPU ： Intel(R) Core(TM) i5-2320 CPU @ 3.00GHz 4核 之前一直使用tornado作为http相关pytho            <a href="https://www.cnblogs.com/MikeZhang/p/sanic_vs_tornado_20191102.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-11-02 23:35
+Mike_Zhang
+<span class="post-view-count">阅读(291)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11784779" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/pyApollo_20191102.html">
+    python访问Apollo获取配置
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： CentOS7.3.1611_x64 Python 版本 : 3.6.8 Apollo源码地址： https://github.com/ctripcorp/apollo 访问Apollo使用这个库： https://github.com/filamoon/pyapollo 不要使用py            <a href="https://www.cnblogs.com/MikeZhang/p/pyApollo_20191102.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-11-02 21:27
+Mike_Zhang
+<span class="post-view-count">阅读(1278)</span><text> </text>
+<span class="post-comment-count">评论(1)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11784229" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/10/26.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年10月26日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/python_windows_venv_20191026.html">
+    Windows下使用virtualenv创建虚拟环境
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： windowns10_x64Python版本：3.6.8virtualenv版本：16.7.7virtualenvwrapper版本：1.2.5 方式一：直接使用virtualenv 1、安装pip install virtualenv 2、创建虚拟环境virtualenv -p d:            <a href="https://www.cnblogs.com/MikeZhang/p/python_windows_venv_20191026.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-10-26 22:14
+Mike_Zhang
+<span class="post-view-count">阅读(453)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11745828" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/kaldi_cvte_20191026.html">
+    kaldi使用cvte模型进行语音识别
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： Unbutu18.04_x64 gcc版本 ：7.4.0 该模型在thch30数据集上测试的错误率只有8.25%，效果还是不错的。 模型下载地址： http://www.kaldi-asr.org/models/m2 选择模型：CVTE Mandarin Model V2 测试文本：             <a href="https://www.cnblogs.com/MikeZhang/p/kaldi_cvte_20191026.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-10-26 21:30
+Mike_Zhang
+<span class="post-view-count">阅读(1596)</span><text> </text>
+<span class="post-comment-count">评论(1)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11741819" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/10/22.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年10月22日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/kaldi_thchs30_20191022.html">
+    kaldi使用thchs30数据进行训练并执行识别操作
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： Ubutu18.04_x64 gcc版本 ：7.4.0 数据准备及训练 数据地址：&#160;http://www.openslr.org/18/ 在 egs/thchs30/s5 建立 thchs30-openslr 文件夹，然后把三个文件解压在了该文件夹下： 进入 s5 目录，修改脚本： 修            <a href="https://www.cnblogs.com/MikeZhang/p/kaldi_thchs30_20191022.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-10-22 22:14
+Mike_Zhang
+<span class="post-view-count">阅读(1181)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(1)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11722981" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/10/19.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年10月19日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/kaldi_install_2019101901.html">
+    kaldi简介及安装
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： Ubuntu18.04_x64 gcc版本 ：7.4.0 简介 Kaldi诞生于2009年的JohnsHopkins University，刚开始项目重点是子空间高斯模型（SGMM）建模和词汇学习抽样调查，代码也是基于HTK进行的开发，现在也是C++作为主要语言。但是随着更多参与者的加            <a href="https://www.cnblogs.com/MikeZhang/p/kaldi_install_2019101901.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-10-19 23:35
+Mike_Zhang
+<span class="post-view-count">阅读(1097)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11706249" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/08/15.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年8月15日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/win7loadvhd20190815.html">
+    windows7使用vhd虚拟磁盘
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： windows7_x64 创建vhd 磁盘管理 --&gt; 操作 --&gt; 创建vhd 挂载vhd 脚本： Python版本： https://github.com/mike-zhang/pyExamples/blob/master/tools/vhdFileOpt/load_vhd.py             <a href="https://www.cnblogs.com/MikeZhang/p/win7loadvhd20190815.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-08-15 21:53
+Mike_Zhang
+<span class="post-view-count">阅读(247)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11360834" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+	<div class="dayTitle">
+        <a href="https://www.cnblogs.com/MikeZhang/archive/2019/07/30.html">
+            <img src="/skins/sea/images/title_post.gif" border=0 align="absmiddle" />
+        </a>
+		&nbsp;
+		2019年7月30日		  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/pip20190730.html">
+    使用pip安装python库的几种方式
+</a>
+
+			</div>
+			
+
+    <div class="c_b_p_desc">
+摘要：操作系统 ： CentOS7.5.1804_x64 Python 版本 : 3.6.8 1、使用pip在线安装 1.1 安装单个package 格式如下： 示例如下： 1.2 安装多个package 示例如下： req.txt 可以通过以下命令获取： 1.3 在线安装的其它问题 1.3.1 代理问题            <a href="https://www.cnblogs.com/MikeZhang/p/pip20190730.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			<div class="postDesc">posted @ 2019-07-30 22:14
+Mike_Zhang
+<span class="post-view-count">阅读(4861)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11273154" rel="nofollow">
+    编辑
+</a>
+</div>
+
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/MikeZhang/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script></DIV>
+	
+</div>
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a>
+	Copyright &copy; 2020 Mike_Zhang
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>

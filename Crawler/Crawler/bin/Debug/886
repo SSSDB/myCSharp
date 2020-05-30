@@ -1,0 +1,538 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>随笔列表第2页 - Bitssea - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=KCO3_f2W_TC__-jZ7phSnmoFkQuWMJH2yAgA16eE3eY" />
+    <link id="MainCss" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip.min.css?v=1CubIA3L29CO3-6VLJIOrrj2uGfyKeX_-xaumWzHk7o" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/bitssea/custom.css?v=M3lyivSb0zbRpbMqtPN2AyuLQyw=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/darkgreentrip/bundle-darkgreentrip-mobile.min.css?v=0pGk3D9Ik_jI4q1TALBT2ybOjIePHS_80_0J4DDOQiY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/bitssea/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/bitssea/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/bitssea/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=6bwfCY2e02dLOXNW99G2BHZkYFmw9QyYTWeJ-W-sudo"></script>
+    <script>
+        var currentBlogId = 589112;
+        var currentBlogApp = 'bitssea';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'darkgreentrip';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/bitssea/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/bitssea/">Bitssea</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/bitssea/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Bitssea">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/bitssea/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+24&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+1</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+<div id="homepage_top_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/bitssea/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/bitssea/default.html?page=1">1</a>
+    2
+        <a href="https://www.cnblogs.com/bitssea/default.html?page=3">3</a>
+    
+    
+    <a href="https://www.cnblogs.com/bitssea/default.html?page=3">下一页</a>
+</div>
+</div>
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/04/15.html">2020年4月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12702752.html">
+    Intel 4004，世界上第一块 CPU
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：The Intel 4004 is a 4 bit central processing unit (CPU) released by Intel Corporation in 1971. 参考阅读： 1. &quot;Happy 40th birthday, Intel 4004!&quot; 2. &quot;Intel 4            <a href="https://www.cnblogs.com/bitssea/p/12702752.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-04-15 02:54
+Bitssea
+<span class="post-view-count">阅读(78)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12702752" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/04/12.html">2020年4月12日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12684322.html">
+    VBScript - 弹出“文件选择对话框”方法大全！
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文记录，VBScript 中，各种打开 “文件选择对话框” 的方法。 实现方法 1 (mshta.exe)： 首先，我们要实现的就是，弹出上面的这个“文件选择对话框”。 这种方法是通过，Shell 对象，打开 mshta.exe 程序，执行一个 .hta 文件，从而打开窗口， 这种方法，其实是写了            <a href="https://www.cnblogs.com/bitssea/p/12684322.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-04-12 14:48
+Bitssea
+<span class="post-view-count">阅读(258)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12684322" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/04/07.html">2020年4月7日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12651008.html">
+    VBScript - 找到 Excel 中的最后一行
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要记录，使用 VBScript，如何找到 Excel 页面中的，最后一行。 参考 VBA 中的解决方式： 很多 VBA 与 VBScript 的解决方法都是通用的，尤其是针对 Excel 的时候， 所以，我们先来看下 VBA 中，常用的3中方法： VBScript 中的解决方式： 然后，我们来            <a href="https://www.cnblogs.com/bitssea/p/12651008.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-04-07 02:34
+Bitssea
+<span class="post-view-count">阅读(71)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12651008" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/04/05.html">2020年4月5日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12555045.html">
+    Web Scraping（网页抓取）基本原理 - 白话篇
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要介绍 Web Scraping 的基本原理，基于Python语言，大白话，面向可爱的小白(\^ \^)。 易混淆的名称: 很多时候，大家会把，在网上获取Data的代码，统称为“爬虫”， 但实际上，所谓的“爬虫”，并不是特别准确，因为“爬虫”也是分种的， 常见的“爬虫”有两种： 1. 网路爬虫            <a href="https://www.cnblogs.com/bitssea/p/12555045.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-04-05 06:05
+Bitssea
+<span class="post-view-count">阅读(192)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12555045" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/04/04.html">2020年4月4日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12625080.html">
+    VBScript - 动态 Array 实现方法大全！
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：记录一些方法，关于 VBScript 中，动态 Array 的实现 ，也适用于 VBA， 很久以前，写 VBA 的时候，就觉得使用 Array 很不方便，因为大小固定， 当时想的是，要是 Array 可以像 Python 里的 list 一样好用该多好啊， 那么下面，就记录一些方法，能让 Array            <a href="https://www.cnblogs.com/bitssea/p/12625080.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-04-04 09:53
+Bitssea
+<span class="post-view-count">阅读(127)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12625080" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/03/30.html">2020年3月30日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12596210.html">
+    莎士比亚电路ヾ(≧▽≦*)o
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：偶尔记录一件有趣的事儿！ 这个电路叫做 “莎士比亚电路”[^书籍引用]，请自行参悟，ヾ(≧▽≦ )o，ヾ(≧▽≦ )o，ヾ(≧▽≦ )o [^书籍引用]:《穿越计算机的迷雾》，李忠，图5.22，P88 ヾ(≧▽≦ )o 。            <a href="https://www.cnblogs.com/bitssea/p/12596210.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-03-30 01:09
+Bitssea
+<span class="post-view-count">阅读(48)</span><text> </text>
+<span class="post-comment-count">评论(1)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12596210" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/03/29.html">2020年3月29日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12590701.html">
+    WScript.Shell 与 Shell.Application 的不同
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文主要对比，VBScript 中 CreateObject(&quot;WScript.Shell&quot;) 和 CreateObject(&quot;Shell.Application&quot;) 之间，有什么不同。 代码上的不同： 代码如下： 这里主要记录下，两种看似类似的方法，到底有什么不同： 1. 首先它俩，来自于完全不同            <a href="https://www.cnblogs.com/bitssea/p/12590701.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-03-29 10:26
+Bitssea
+<span class="post-view-count">阅读(172)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12590701" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/03/27.html">2020年3月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12578704.html">
+    VBScript 打开含有&quot;空格&quot;的路径 (Open Path with Space)
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：记录，VBScript 如何打开，含有&quot;空格&quot;的路径。这个问题和常见，却总是忘！ 直接上代码了，多说无益。 这就是，解决方法！ 就是在 path 两边个加上， 4层双引号！ 如果直接运行 ，代码会报错，或者根本打不开， 因为，代码不知为何，打开的是，空格之间的那段路径， 所以，会显示找不到路径！ 这            <a href="https://www.cnblogs.com/bitssea/p/12578704.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-03-27 00:34
+Bitssea
+<span class="post-view-count">阅读(30)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12578704" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bitssea/archive/2020/03/25.html">2020年3月25日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12560401.html">
+    SublimeのJedi (自动补全)
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：关于 Sublime 3 Jedi Package 的设置和使用方法 我是一枚小白，安装后 Sublime 后，想在码字时，达到如下效果： 1. 打字时，自动提示相关内容 2. 按Tab键，相关内容自动填充 3. 有参数的Function，能提示需要的参数 为什么选择 Jedi 因为 Package            <a href="https://www.cnblogs.com/bitssea/p/12560401.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-03-25 19:49
+Bitssea
+<span class="post-view-count">阅读(96)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12560401" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bitssea/p/12563774.html">
+    Chrome 经典插件
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：记录几个很喜欢的 Chrome 插件，怕之后找不到了。 1. Dark Theme 很喜欢的一个黑色主题! 2. Volume Booster 能把音量提高2倍的小插件！好用！ 3. Looper for Youtube 无限循环，Youtube上的音乐！            <a href="https://www.cnblogs.com/bitssea/p/12563774.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">posted @ 2020-03-25 07:51
+Bitssea
+<span class="post-view-count">阅读(28)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12563774" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+
+    </div>    
+</div>
+
+
+<div id="homepage_bottom_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/bitssea/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/bitssea/default.html?page=1">1</a>
+    2
+        <a href="https://www.cnblogs.com/bitssea/default.html?page=3">3</a>
+    
+    
+    <a href="https://www.cnblogs.com/bitssea/default.html?page=3">下一页</a>
+</div>
+</div>
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Bitssea
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="前言 最近对外接口偶现504超时问题，原因是代码执行时间过长，超过nginx配置的15秒，然后真枪实弹搞了一次接口性能优化。在这里结合优化过程，总结了接口优化的八个要点，希望对大家有帮助呀~ 数据量比" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>记一次接口性能优化实践总结：优化接口性能的八个建议 - Jay_huaxiao - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=KCO3_f2W_TC__-jZ7phSnmoFkQuWMJH2yAgA16eE3eY" />
+    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=vmUk-3Bh8LDsKXwjNHs2GDiFna-ZMTUgOJzjUaXTlPA" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/jay-huaxiao/custom.css?v=UmSBlgkbjb6mfAIPQ1WdIvlFKR8=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=cJiDsI1JAuHHd-OAUWJeyE5JMXXsG4mmuUi2rVmEK1c" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/jay-huaxiao/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/jay-huaxiao/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/jay-huaxiao/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=6bwfCY2e02dLOXNW99G2BHZkYFmw9QyYTWeJ-W-sudo"></script>
+    <script>
+        var currentBlogId = 449831;
+        var currentBlogApp = 'jay-huaxiao';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'AnotherEon001';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="wrapper">
+<div id="header">
+
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/jay-huaxiao/">huaxiao</a>
+</h1>
+<div id="subtitle">
+
+</div>
+</div>
+<div id="sub"><div class="BlogStats">随笔 - 
+26, 文章 - 
+0, 评论 - 
+41, 引用 - 
+0</div>
+
+</div>
+
+
+
+
+</div>
+<div id="main_container">
+<div id="main_content">
+<div id="content">
+	<div id="post_detail">
+    <div class="post">
+        <h2>
+            
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/jay-huaxiao/p/12995510.html">记一次接口性能优化实践总结：优化接口性能的八个建议</a>
+
+        </h2>
+        <div class="postbody">
+            
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <h3 id="前言">前言</h3>
+<p>最近对外接口偶现504超时问题，原因是代码执行时间过长，超过nginx配置的15秒，然后真枪实弹搞了一次接口性能优化。在这里结合优化过程，总结了接口优化的八个要点，希望对大家有帮助呀~</p>
+<ul>
+<li>数据量比较大，批量操作数据入库</li>
+<li>耗时操作考虑异步处理</li>
+<li>恰当使用缓存</li>
+<li>优化程序逻辑、代码</li>
+<li>SQL优化</li>
+<li>压缩传输内容</li>
+<li>考虑使用文件/MQ等其他方式暂存，异步再落地DB</li>
+<li>跟产品讨论需求最恰当，最舒服的实现方式</li>
+</ul>
+<p>嘻嘻，先看一下我们对外转账接口的大概流程吧<br>
+<img src="https://user-gold-cdn.xitu.io/2020/5/30/1726375c0d0162f3?w=1393&amp;h=586&amp;f=png&amp;s=50348" alt=""></p>
+<h3 id="1数据量比较大，批量操作数据入库">1.数据量比较大，批量操作数据入库</h3>
+<p><strong>优化前：</strong></p>
+<pre><code>//for循环单笔入库
+for(TransDetail detail:list){
+  insert(detail);  
+}
+</code></pre>
+<p><strong>优化后：</strong></p>
+<pre><code>// 批量入库,mybatis demo实现
+&lt;insert id=&quot;insertBatch&quot; parameterType=&quot;java.util.List&quot;&gt;
+insert into trans_detail( id,amount,payer,payee) values
+ &lt;foreach collection=&quot;list&quot; item=&quot;item&quot; index=&quot;index&quot; separator=&quot;,&quot;&gt;(
+    #{item.id},	#{item.amount},
+    #{item.payer},#{item.payee}
+  )
+&lt;/foreach&gt;
+&lt;/insert&gt;
+</code></pre>
+<p><strong>性能对比：</strong></p>
+<table>
+<thead>
+<tr>
+<th>单位（ms）</th>
+<th>for循环单笔入库</th>
+<th>批量入库</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500条</td>
+<td>1432</td>
+<td>1153</td>
+</tr>
+<tr>
+<td>1000条</td>
+<td>1876</td>
+<td>1425</td>
+</tr>
+</tbody>
+</table>
+<p><strong>解析</strong></p>
+<ul>
+<li>批量插入性能更好，更加省时间，为什么呢？</li>
+</ul>
+<pre><code>打个比喻:假如你需要搬一万块砖到楼顶,你有一个电梯,电梯一次可以放适量的砖（最多放500）,
+你可以选择一次运送一块砖,也可以一次运送500,你觉得哪种方式更方便，时间消耗更少?
+</code></pre>
+<h3 id="2耗时操作考虑异步处理">2.耗时操作考虑异步处理</h3>
+<p>耗时操作，考虑用异步处理，这样可以降低接口耗时。本次转账接口优化，匹配联行号的操作耗时有点长，所以优化过程把它移到异步处理啦，如下：</p>
+<p><strong>优化前：</strong></p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/5/30/17265b8162520449?w=732&amp;h=599&amp;f=png&amp;s=50717" alt=""></p>
+<p><strong>优化后</strong></p>
+<p>匹配联行号的操作异步处理</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/5/30/17265bddbe759306?w=707&amp;h=554&amp;f=png&amp;s=50118" alt=""></p>
+<p><strong>性能对比：</strong></p>
+<p>假设一个联行号匹配6ms</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>同步</th>
+<th>异步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500条</td>
+<td>3000ms</td>
+<td>~</td>
+</tr>
+<tr>
+<td>1000条</td>
+<td>6000ms</td>
+<td>~</td>
+</tr>
+</tbody>
+</table>
+<p><strong>解析：</strong></p>
+<ul>
+<li>因为联行号匹配比较耗时，放在异步处理的话，同步联机返回可以省掉这部分时间，大大提升接口性能，并且不会影响到转账主流程功能。</li>
+<li>除了这个例子，平时我们类似功能，如用户注册成功后，短信邮件通知，也是可以异步处理的，这个优化建议香饽饽的~</li>
+<li>所以，太耗时的操作，在不影响主流程功能的情况下，可以考虑开子线程异步处理的啦。</li>
+</ul>
+<h3 id="3恰当使用缓存">3.恰当使用缓存</h3>
+<p>在适当的业务场景，恰当地使用缓存，是可以大大提高接口性能的。这里的缓存包括：Redis，JVM本地缓存，memcached，或者Map等。</p>
+<p>这次转账接口，使用到缓存啦，举个简单例子吧~</p>
+<p><strong>优化前</strong></p>
+<p>以下是输入用户账号，匹配联行号的流程图</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/5/30/17263c548352f480?w=396&amp;h=719&amp;f=png&amp;s=36528" alt=""></p>
+<p><strong>优化后：</strong></p>
+<p>恰当使用缓存，代替查询DB表，流程图如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/5/30/17263cc73ccd1e76?w=723&amp;h=785&amp;f=png&amp;s=70764" alt=""></p>
+<p><strong>解析：</strong></p>
+<ul>
+<li>把热点数据放到缓存，不用每次查询都去DB拉取，节省了这部分查SQL的耗时，美滋滋呀~</li>
+<li>当然，不是什么数据都适合放到缓存的哦，访问比较频繁的热点数据才考虑缓存起来呢~</li>
+</ul>
+<h3 id="4-优化程序逻辑、代码">4. 优化程序逻辑、代码</h3>
+<p>优化程序逻辑、程序代码，是可以节省耗时的。</p>
+<p>我这里就本次的转账接口优化，举个例子吧~</p>
+<p><strong>优化前：</strong></p>
+<p>优化前，联行号查询了两次（检验参数一次，插入DB前查询一次），如下伪代码：</p>
+<pre><code>
+punlic void process(Req req){
+  //检验参数,包括联行号（前端传来的payeeBankNo可以为空,但是如果后端没匹配到，会抛异常）
+   checkTransParams(Req req);
+   //Save DB
+  saveTransDetail(req); 
+}
+
+void checkTransParams（Req req）{
+    //check Amount,and so on.
+    checkAmount(req.getamount)；
+    //check payeebankNo
+    if（Utils.isEmpty(req.getPayeeBankNo())）{
+        String payeebankNo = getPayeebankNo(req.getPayeeAccountNo);
+        if(Utils.isEmpty(payeebankNo){
+            throws Exception();
+        }
+    }
+}
+
+int saveTransDetail(req){
+    String payeebankNo = getPayeebankNo(req.getPayeeAccountNo);
+    req.setPayeeBankNo(payeebankNo);
+    insert(req);
+    ...
+}
+
+</code></pre>
+<p><strong>优化后：</strong></p>
+<p>优化后，只在校验参数的时候插叙一次，然后设置到对象里面~ 入库前就不用再查啦，伪代码如下：</p>
+<pre><code>void checkTransParams（Req req）{
+    //check Amount,and so on.
+    checkAmount(req.getamount)；
+    //check payeebankNo
+    if（Utils.isEmpty(req.getPayeeBankNo())）{
+        String payeebankNo = getPayeebankNo(req.getPayeeAccountNo);
+        if(Utils.isEmpty(payeebankNo){
+            throws Exception();
+        }
+    }
+    //查询到有联行号，直接设置进去啦，这样等下入库不用再插入多一次
+    req.setPayeeBankNo(payeebankNo);
+}
+
+int saveTransDetail(req){
+    insert(req);
+    ...
+}
+</code></pre>
+<p><strong>解析：</strong></p>
+<ul>
+<li>对于优化程序逻辑、代码，是可以降低接口耗时的。以上demo只是一个很简单的例子，就是优化前payeeBankNo查询了两次，但是其实只查一次就可以了。很多时候，我们都知道这个点，但就是到写代码的时候，又忘记了呀~所以，写代码的时候，留点心吧，优化你的程序逻辑、代码哦。</li>
+<li>除了以上demo这点，还有其它的点，如优化if复杂的逻辑条件，考虑是否可以调整顺序，或者for循环，是否重复实例化对象等等，这些适当优化，都是可以让你的代码跑得更快的。</li>
+</ul>
+<p>之前我这篇文章，也提了几个优化点噢，有兴趣的朋友可以看一下哈~</p>
+<p><a href="https://juejin.im/post/5dfe2e72518825125f39a2de#heading-1">写代码有这些想法，同事才不会认为你是复制粘贴程序员</a></p>
+<h3 id="5-优化你的sql">5. 优化你的SQL</h3>
+<p>很多时候，你的接口性能瓶颈就在SQL这里，慢查询需要我们重点关注的点呢。</p>
+<p>我们可以通过这些方式优化我们的SQL：</p>
+<ul>
+<li>加索引</li>
+<li>避免返回不必要的数据</li>
+<li>优化sql结构</li>
+<li>分库分表</li>
+<li>读写分离</li>
+</ul>
+<p>有兴趣的朋友可以看一下我这篇文章呢，很详细的SQL优化点：</p>
+<p><a href="https://juejin.im/post/5e624d156fb9a07ca80ab6f2">后端程序员必备：书写高质量SQL的30条建议</a></p>
+<h3 id="6压缩传输内容">6.压缩传输内容</h3>
+<p>压缩传输内容，文件变得更小，因此传输会更快啦。10M带宽，传输10k的报文，一般比传输1M的会快呀；打个比喻，一匹千里马，它驮着一百斤的货跑得快，还是驮着10斤的货物跑得快呢？</p>
+<p><strong>解析：</strong></p>
+<ul>
+<li>如果你的接口性能不好，然后传输报文比较大的话，这时候是可以考虑压缩文件内容传输的，最后优化效果可能很不错哦~</li>
+</ul>
+<h3 id="7-考虑使用文件mq等其他方式暂存数据，异步再落地db">7. 考虑使用文件/MQ等其他方式暂存数据，异步再落地DB</h3>
+<p>如果数据太大，落地数据库实在是慢的话，可以考虑先用文件的方式保存，或者考虑MQ，先落地，再异步保存到数据库~</p>
+<blockquote>
+<p>本次转账接口，如果是并发开启，10个并发度，每个批次1000笔数据，数据库插入会特别耗时，大概10秒左右，这个跟我们公司的数据库同步机制有关，并发情况下，因为优先保证同步，所以并行的插入变成串行啦，就很耗时。</p>
+</blockquote>
+<p><strong>优化前：</strong></p>
+<p>优化前，1000笔先落地DB数据库，再异步转账，如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/5/30/17265cde30477f97?w=663&amp;h=513&amp;f=png&amp;s=45382" alt=""></p>
+<p><strong>优化后：</strong></p>
+<p>先保存数据到文件，再异步下载下来，插入数据库，如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/5/30/17265d09e9deb059?w=753&amp;h=540&amp;f=png&amp;s=52581" alt=""><br>
+<strong>解析：</strong></p>
+<ul>
+<li>如果你的耗时瓶颈就在数据库插入操作这里了，那就考虑文件保存或者MQ或者其他方式暂存吧，文件保存数据，对比一下耗时，有时候会有意想不到的效果哦。</li>
+</ul>
+<h3 id="8跟产品讨论需求最恰当，最舒服的实现方式">8.跟产品讨论需求最恰当，最舒服的实现方式</h3>
+<p>这点个人觉得还是很重要的，有些需求需要好好跟产品沟通的。</p>
+<blockquote>
+<p>比如有个用户连麦列表展示的需求，产品说要展示所有的连麦信息，如果一个用户的连麦列表信息好大，你拉取所有连麦数据回来，接口性能就降下来啦。如果产品打桩分析，会发现，一般用户看连麦列表，也就看前几页<sub>因此，奸笑，哈哈</sub> 其实，那个超大分页加载问题也是类似的。即limit +一个超大的数，一般会很慢的~~</p>
+</blockquote>
+<h3 id="总结">总结</h3>
+<p>本文呢，基于一次对外接口耗时优化的实践，总结了优化接口性能的八个点，希望对大家日常开发有帮助哦~嘻嘻，有兴趣可以逛逛我的github哈，本文会收藏到github里滴哈</p>
+<blockquote>
+<p><a href="https://github.com/whx123/JavaHome">https://github.com/whx123/JavaHome</a></p>
+</blockquote>
+<h3 id="公众号">公众号</h3>
+<p><img src="https://user-gold-cdn.xitu.io/2020/5/16/1721b50d00331393?w=900&amp;h=500&amp;f=png&amp;s=389569" alt=""></p>
+<ul>
+<li>欢迎关注我个人公众号，交个朋友，一起学习哈~</li>
+</ul>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+        </div>
+        <p class="postfoot">
+            posted on 
+<span id="post-date">2020-05-30 22:57</span>&nbsp;
+<a href="https://www.cnblogs.com/jay-huaxiao/">Jay_huaxiao</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12995510" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12995510);return false;">收藏</a>
+        </p>
+    </div>
+</div>
+
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 449831, cb_blogApp = 'jay-huaxiao', cb_blogUserGuid = '932b17be-b8a5-48ea-318e-08d5f84d9736';
+    var cb_entryId = 12995510, cb_entryCreatedDate = '2020-05-30 22:57', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;"></div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+
+</div>
+</div>
+<div id="leftmenu">
+
+
+<h3>导航</h3>
+<ul>
+    <li>
+        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/jay-huaxiao/">
+首页</a>
+
+    </li>
+    <li>
+        
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+
+    </li>
+    <li>
+        
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Jay_huaxiao">
+联系</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/jay-huaxiao/rss/">
+订阅</a>
+        
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/jay-huaxiao/rss/">
+    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
+</a>
+    </li>
+    <li>
+        
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+    </li>
+</ul>
+
+
+<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+
+</div>
+</div>
+<div class="clear"></div>
+<div id="footer">
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	<a href="https://www.cnblogs.com/" id="footer_site_link">博客园</a>
+	<br />
+	Copyright &copy; 2020 Jay_huaxiao
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+</div>
+</div>
+
+
+    
+</body>
+</html>

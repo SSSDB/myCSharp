@@ -1,0 +1,9 @@
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\bin\Debug\Crawler.exe.config
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\bin\Debug\Crawler.exe
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\bin\Debug\Crawler.pdb
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\obj\Debug\Crawler.csprojAssemblyReference.cache
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\obj\Debug\CrawlerForm.Form1.resources
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\obj\Debug\Crawler.Properties.Resources.resources
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\obj\Debug\Crawler.csproj.GenerateResource.cache
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\obj\Debug\Crawler.exe
+C:\Users\86150\Desktop\cayley tree\myCSharp\Crawler2.0\Crawler\obj\Debug\Crawler.pdb

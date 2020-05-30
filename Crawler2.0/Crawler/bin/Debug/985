@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="操作系统 ：Windows10_x64 &amp;amp;&amp;amp; CentOS7.7.1908_x64 声道(Sound Channel) 是指声音在录制或播放时在不同空间位置采集或回放的相互独立的音频信" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>双声道合并为单声道 - Mike_Zhang - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=KCO3_f2W_TC__-jZ7phSnmoFkQuWMJH2yAgA16eE3eY" />
+    <link id="MainCss" rel="stylesheet" href="/skins/sea/bundle-sea.min.css?v=Jpv_XRZqv7HnW0FXxHohZmb1TG6nYuWdNSwqJML5lHA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea-mobile.min.css?v=GEzW0neGdNE-VMws0ftJENKA__n-moeEPmS2Y9XCJis" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/MikeZhang/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/MikeZhang/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/MikeZhang/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=6bwfCY2e02dLOXNW99G2BHZkYFmw9QyYTWeJ-W-sudo"></script>
+    <script>
+        var currentBlogId = 98232;
+        var currentBlogApp = 'MikeZhang';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'sea';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <a href="https://github.com/mike-zhang/mikeBlogEssays"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    </div>
+    <!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/MikeZhang/"></a>
+<br>
+		
+
+
+	</div>
+</div>
+
+
+</div>
+
+<div id="mytopmenu">
+	
+		<div id="mylinks">
+<a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+ &nbsp;
+
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/MikeZhang/">
+首页</a>
+ &nbsp;
+
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+ &nbsp;
+
+ &nbsp;
+
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/MikeZhang/rss/">
+订阅</a>
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/MikeZhang/rss/">
+    <img src="/skins/sea/images/xml.gif" alt="订阅" />
+</a>&nbsp;
+
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+
+</div>
+		<DIV id="mystats">随笔-
+198&nbsp;
+评论-
+268&nbsp;
+文章-
+0&nbsp;
+<!--trackbacks-<partial name="./Shared/_PingTrackCount.cshtml" model="BlogServer.Web.Models.DetailBlogPage" />-->
+
+</DIV>
+	
+</div>
+<div id="centercontent">
+	<div id="post_detail">
+<div class="post">
+	<h1 class = "postTitle">
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/MikeZhang/p/stereo2mono-20200530.html">双声道合并为单声道</a>
+</h1>
+	
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p>操作系统 ：Windows10_x64 &amp;&amp; CentOS7.7.1908_x64</p>
+<p>声道(Sound Channel) 是指声音在录制或播放时在不同空间位置采集或回放的相互独立的音频信号，所以声道数也就是声音录制时的音源数量或回放时相应的扬声器数量。</p>
+<p><a name="user-content-id2"></a></p>
+<h2><a id="user-content-背景描述" class="anchor" href="https://github.com/mike-zhang/mikeBlogEssays/blob/master/2020/20200530_%E5%8F%8C%E5%A3%B0%E9%81%93%E5%90%88%E5%B9%B6%E4%B8%BA%E5%8D%95%E5%A3%B0%E9%81%93.rst#%E8%83%8C%E6%99%AF%E6%8F%8F%E8%BF%B0"></a>背景描述</h2>
+<p>在VoIP语音通信过程中，将通话中的两人声音分别存储在两个声道里面，对后期的声音识别和分析会很有帮助。但在实际使用的过程中，会出现某些设备（比如：客服单耳塞耳机）不能正常听取双声道录音文件的情况。</p>
+<p><a name="user-content-id3"></a></p>
+<h2><a id="user-content-解决方案" class="anchor" href="https://github.com/mike-zhang/mikeBlogEssays/blob/master/2020/20200530_%E5%8F%8C%E5%A3%B0%E9%81%93%E5%90%88%E5%B9%B6%E4%B8%BA%E5%8D%95%E5%A3%B0%E9%81%93.rst#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"></a>解决方案</h2>
+<p>可以将双声道文件合并为单声道文件进行解决，这里提供几个工具完成该工作。</p>
+<h3><strong>1、使用Audacity进行双声道合并</strong></h3>
+<p>打开Audacity软件，将声音文件拖放到界面里面，执行合并操作：</p>
+<p><img src="https://img2020.cnblogs.com/blog/300959/202005/300959-20200530221208995-700368512.png" alt=""></p>
+<p>合并后执行导出操作即可。</p>
+<h3>2、使用ffmpeg进行双声道合并</h3>
+<p>ffmpeg官网：&nbsp;<a href="http://www.ffmpeg.org/" rel="nofollow">http://www.ffmpeg.org</a></p>
+<p>ffmpeg二进制文件下载：&nbsp;<a href="https://johnvansickle.com/ffmpeg/" rel="nofollow">https://johnvansickle.com/ffmpeg/</a>&nbsp;<a href="https://www.johnvansickle.com/ffmpeg/old-releases/" rel="nofollow">https://www.johnvansickle.com/ffmpeg/old-releases/</a></p>
+<p>双通道录音合并为单声道：</p>
+<pre>ffmpeg -i 1.wav -f wav -ac 1 -ab 128k -y 1_dan1.wav</pre>
+<p>合并前的波形图：</p>
+<p><img src="https://img2020.cnblogs.com/blog/300959/202005/300959-20200530221316565-2087928576.png" alt=""></p>
+<p>合并后的波形图：</p>
+<p><img src="https://img2020.cnblogs.com/blog/300959/202005/300959-20200530221343054-1757473414.png" alt=""></p>
+<h3>3、使用sox进行双声道合并</h3>
+<p><a href="http://sox.sourceforge.net/Main/HomePage" rel="nofollow">http://sox.sourceforge.net/Main/HomePage</a></p>
+<p>文件下载：&nbsp;<a href="https://sourceforge.net/projects/sox/files/sox/" rel="nofollow">https://sourceforge.net/projects/sox/files/sox/</a></p>
+<p>CentOS7 下直接安装sox（Windows版本见文后资源包）：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">yum</span> <span style="color: #0000ff;">install</span><span style="color: #000000;"> sox<br /></span></pre>
+</div>
+<p>合并命令：</p>
+<div class="cnblogs_code">
+<pre>sox <span style="color: #800080;">1</span>.wav -c <span style="color: #800080;">1</span> <span style="color: #800080;">1</span>-mono.wav</pre>
+</div>
+<p>本文涉及软件及资源下载地址：<a href="https://pan.baidu.com/s/18hcgdtRA9fbxNka2pjZO7Q" rel="nofollow">https://pan.baidu.com/s/18hcgdtRA9fbxNka2pjZO7Q</a></p>
+<p>可关注微信公众号（聊聊博文）后回复 2020053001 获取提取码</p>
+<p>本文github地址：</p>
+<p><a href="https://github.com/mike-zhang/mikeBlogEssays/blob/master/2020/20200530_%E5%8F%8C%E5%A3%B0%E9%81%93%E5%90%88%E5%B9%B6%E4%B8%BA%E5%8D%95%E5%A3%B0%E9%81%93.rst" target="_blank">https://github.com/mike-zhang/mikeBlogEssays/blob/master/2020/20200530_双声道合并为单声道.rst</a><a href="https://github.com/mike-zhang/mikeBlogEssays/blob/master/2019/20191128_python%E8%AE%BF%E9%97%AEkafka.rst" target="_blank"><span class="separator"><span class="final-path"><br /></span></span></a></p>
+<p>欢迎补充&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+	<div class="postDesc">posted on 
+<span id="post-date">2020-05-30 22:42</span>&nbsp;
+<a href="https://www.cnblogs.com/MikeZhang/">Mike_Zhang</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12995320" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12995320);return false;">收藏</a></div>
+</div>
+
+
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 98232, cb_blogApp = 'MikeZhang', cb_blogUserGuid = '7f490518-0f80-e011-a53f-842b2b196315';
+    var cb_entryId = 12995320, cb_entryCreatedDate = '2020-05-30 22:42', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;"></div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div></div>
+
+
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script></DIV>
+	
+</div>
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a>
+	Copyright &copy; 2020 Mike_Zhang
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>

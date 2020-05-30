@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="版本控制 版本控制就是记录项目文件的历史变化。它为我们查阅日志，回退，协作等方面提供了有力的帮助。 版本控制一般分为集中化版本控制和分布式版本控制。 集中化主要的版本数据都保存服务端。 分布式版本数据" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>一篇文章，全面掌握Git - 一直奋斗的程序猿 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=KCO3_f2W_TC__-jZ7phSnmoFkQuWMJH2yAgA16eE3eY" />
+    <link id="MainCss" rel="stylesheet" href="/skins/codinglife/bundle-codinglife.min.css?v=UeHyLv1TT2WTz4TwfUOiMoKNmtFvLUjUnIhFE2UmZ7I" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/codinglife/bundle-codinglife-mobile.min.css?v=XjHfryC9ctsatIZz1dHn7TsRIqmwz9c3aj_6SCfHSDM" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/sky233/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/sky233/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/sky233/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=6bwfCY2e02dLOXNW99G2BHZkYFmw9QyYTWeJ-W-sudo"></script>
+    <script>
+        var currentBlogId = 331769;
+        var currentBlogApp = 'sky233';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'CodingLife';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/sky233/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/sky233/">一直奋斗的程序猿</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/sky233/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E4%B8%80%E7%9B%B4%E5%A5%8B%E6%96%97%E7%9A%84%E7%A8%8B%E5%BA%8F%E7%8C%BF">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/sky233/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+10&nbsp; </span>
+<span id="stats_article_count">文章 - 
+7&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+1</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/sky233/p/12995362.html">一篇文章，全面掌握Git</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <h2 id="版本控制">版本控制</h2>
+<p><strong>版本控制</strong>就是记录项目文件的历史变化。它为我们<strong>查阅日志</strong>，<strong>回退</strong>，<strong>协作</strong>等方面提供了有力的帮助。</p>
+<p>版本控制一般分为集中化版本控制和分布式版本控制。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-e9ae0e66f0c693ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="集中式"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-bb4f74594a8124d3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="分布式"></p>
+<p>集中化主要的版本数据都保存服务端。</p>
+<p>分布式版本数据分散在多端。</p>
+<h2 id="git">Git</h2>
+<p>Git属于分布式版本控制，也是现在比较流行的一种版本管理工具。</p>
+<p>Git项目有三个区块：工作区 / 暂存区 / 版本库</p>
+<ul>
+<li>工作区存放从版本库提取出来的文件，供我们编辑修改；</li>
+<li>暂存区保存了下一次要提交的目录信息；</li>
+<li>版本库保存项目版本元数据和Objects数据，后文会详解。</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-f6fd498f7ca2ebfc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Git工作流程"></p>
+<p>Git工作流程</p>
+<pre><code class="language-bash"># 下载
+&lt;&lt;==== clone 
+# 上传
+====&gt;&gt; add ====&gt;&gt; commit ====&gt;&gt; push
+# 更新
+&lt;&lt;==== merge|rebase &lt;&lt;===== fetch
+
+</code></pre>
+<h4 id="区分-pull-vs-fetch">区分 Pull vs Fetch</h4>
+<p>我们将一个更新操作拆分为<strong>数据更新+合并处理</strong>两部分，这样来看 fetch 只是进行数据更新。而pull 其实是 ( fetch + (merge|rebase) )组合操作，它执行<strong>数据更新</strong>同时执行<strong>合并处理</strong>。pull 默认是fetch+merge 组合 ，也可以通过参数 --rebase 指定为 fetch + rebase。</p>
+<h4 id="区分merge-vs-rebase">区分Merge vs Rebase</h4>
+<p><strong>合并处理</strong>是Git很重要的一块知识。两个命令在工作中也经常使用，区分它们对我们很有用。</p>
+<p>场景如下</p>
+<p>项目有一个mywork分支。C2时间点我和小明各自下载项目进行功能开发，小明效率比较高，先推送了C3 C4 到远程仓库。我本地仓库现在有C5 C6两个提交，要推送到远程仓库，需先同步远程仓库版本。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-a7659059cab50789.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git"></p>
+<p>如果通过 fetch + merge 方式，Git会将远程最新(C4)和本地最新(C6)进行合并并产生一个新的(C7)。</p>
+<p>冲突处理步骤</p>
+<pre><code class="language-bash">git merge # 发生冲突会出现冲突标记
+“&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+40
+=======
+41
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 41”
+# 手动处理冲突
+git add .
+git commit -m 'fix conflict'
+git push origin HEAD
+</code></pre>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-7c8fba26a4901ea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git merge"></p>
+<p>如果通过 fetch + rebase 方式，git会先将C5 C6存储到.git/rebase零时目录，合并成功后删除。</p>
+<p>冲突处理步骤</p>
+<pre><code class="language-bash">git rebase # 发生冲突会出现冲突标记
+“&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+40
+=======
+41
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 41”
+# 手动处理冲突
+git add .
+git rebase --continue
+git push origin HEAD
+</code></pre>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-dbd184aefc6b1c45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git rebase"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-9e2a3fe48b566a19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git rebase"></p>
+<h4 id="小结">小结</h4>
+<p>git merge 会产生大量Merge日志，可能会对查看带来不便。不过大家还是根据实际情况进行选取。</p>
+<h4 id="关于撤销回退几种场景">关于撤销回退几种场景</h4>
+<p>提交后发现有文件漏了，又不想提交两次。此时通过 “git commit --amend” 可以合并为一个提交。</p>
+<pre><code class="language-bash">git commit -m 'initial commit'
+git add .gitignore
+git commit --amend
+</code></pre>
+<p>如果文件想撤回且尚未提交，执行下面命令撤出暂存空间（index）</p>
+<pre><code class="language-bash">git reset HEAD &lt;file&gt;...
+</code></pre>
+<p>关于 reset 其它用法</p>
+<pre><code class="language-bash"># 重置到指定版本，之前提交内容将丢失
+git reset --hard HEAD 
+# 重置到指定版本，保留更改的文件但未标记为提交
+git reset --mixed HEAD 
+# 重置到指定版本，保留所有改动文件
+git reset –soft HEAD 
+</code></pre>
+<p><strong>特别注意</strong> 当你使用 “git reset --hard HEAD” 重置到某一版本，发现搞错了想回退。这时你可能会执行“git log”，但是发现已经没有以前的版本记录，怎么办？送你一瓶后悔药如下</p>
+<pre><code class="language-bash"># reflog 是Git操作的全日志记录
+git reflog
+
+6241462 (HEAD -&gt; master) HEAD@{0}: reset: moving to 6241462
+ea9b5ab HEAD@{1}: reset: moving to ea9b5ab
+6241462 (HEAD -&gt; master) HEAD@{2}: commit: Hello
+34cd1e3 HEAD@{3}: commit: 3
+ea9b5ab HEAD@{4}: commit: 2
+729a8b1 (origin/master) HEAD@{5}: commit (initial): 1
+
+# 找到最左边对应hash值就可以回退到任意位置
+git reset --hard {index}
+</code></pre>
+<p>如果想撤回文件修改内容且文件尚未提交，执行下面命令</p>
+<pre><code class="language-bash">git checkout -- &lt;file&gt;
+</code></pre>
+<p>如果创建的分支名称需要更改</p>
+<pre><code class="language-bash">git branch -m old new
+
+# 如果分支已经推送到远程，先删除再推送新分支
+git push origin --delete old
+git push origin new
+</code></pre>
+<p>如果<strong>需要撤回的提交</strong>已经推送到了远程仓库，那么补救的方式只有创建新的提交。</p>
+<p>可以利用revert快速撤回到需要回退的版本。</p>
+<pre><code class="language-bash"># 还原最近一个提交
+git revert HEAD
+# 还原倒数第二个
+git revert HEAD^
+# 还原倒数第第四个
+git revert HEAD~3
+</code></pre>
+<h2 id="版本库-objects">版本库 Objects</h2>
+<p>这一节介绍一下Git版本库的存储模型。</p>
+<p>项目历史变动信息都记录在object文件。文件名称是通过<strong>哈希算法</strong> ( 这里是SHA1(对象内容) ) 产生的40位字符。</p>
+<p>这种做法的一个优点就是“在对比两对象是否相同时，只需要比较文件名称就能迅速得出结果”</p>
+<blockquote>
+<p>哈希算法：简单来说就是向函数输入一些内容，输出长度固定的字符串。这里SHA1函数固定输出40长度字符。</p>
+</blockquote>
+<p>object文件分 <strong>blob</strong> <strong>tree</strong> <strong>commit</strong> <strong>tag</strong> 四种类型</p>
+<ul>
+<li>
+<p><strong>blob</strong> 存储文件数据，一般是一个文件；</p>
+</li>
+<li>
+<p><strong>tree</strong> 存储目录和树的引用（子文件目录）；</p>
+</li>
+<li>
+<p><strong>commit</strong> 存储单一树引用，时间点，提交作者，上一次提交指针；</p>
+</li>
+<li>
+<p><strong>tag</strong> 标记特定的<strong>commit</strong> 比如说发版。</p>
+</li>
+</ul>
+<blockquote>
+<p>特别注意：Subversion，CVS，Perforce，Mercurial等是存储前后两次提交的差异数据。Gi-每次提交时，它都会以树状结构存储项目中所有文件的外观快照。</p>
+</blockquote>
+<h4 id="blob">Blob</h4>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-d0c5995ba38b52ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="blob"></p>
+<p>Blob 是二进制数据块，不会引用其它东西。如果目录树（或存储库中多个不同版本）中的两个文件具有内容相同，它们将共享相同的Blob对象。</p>
+<h4 id="tree">Tree</h4>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-bbbf43b0393565b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="tree"></p>
+<p>Tree 存储blob和tree的引用。</p>
+<pre><code class="language-bash"># 我查询 add1a1306e20...
+git ls-tree add1a1306e20...
+
+100644 blob 4661b39c3460a5c1f9e9309e6341962e0499b037	README.md
+040000 tree ad46b24a4b0648ede3ca090dde32c89b89f7f2c1	src
+...
+</code></pre>
+<h4 id="commit">Commit</h4>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-c16560cf172ae42d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="commit"></p>
+<p>Commit 包含下面几个信息</p>
+<ol>
+<li><strong>tree</strong> 提交时间点的目录；</li>
+<li><strong>parent</strong> 上一个提交；</li>
+<li><strong>author</strong> 提交人；</li>
+</ol>
+<pre><code class="language-bash">git show -s --pretty=raw add1a1306e....
+
+commit add1a1306e....
+tree 81d4e4271a56575da7f992dc0dfc72ff7ddff94c
+parent cd397e4c373013b19825b857b43ad8f677607f5d
+author lixingping &lt;lixingping233@gmail.com&gt; 1589783810 +0800
+committer lixingping &lt;lixingping233@gmail.com&gt; 1589783810 +0800
+</code></pre>
+<h4 id="tag">Tag</h4>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-ee5d12a073747496.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="tag"></p>
+<pre><code class="language-bash">git cat-file tag v_1.0
+
+object 24d16acd6aa08f74556c7ce551fa571b4bfe4079
+type commit
+tag v_1.0
+tagger lixingping &lt;lixingping233@gmail.com&gt; 1588591122 +0800
+</code></pre>
+<h4 id="例子">例子</h4>
+<p>假设项目目录结构如下，我们进行一个初始提交。几种文件关系如下图</p>
+<pre><code class="language-bash">|-- read.txt
+    --| lib
+      --| hello.java
+</code></pre>
+<p><img src="https://upload-images.jianshu.io/upload_images/19724385-a14f0dc859c15a28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="关系图"></p>
+<h2 id="附上一些常用命令">附上一些常用命令</h2>
+<p>生成SSH key</p>
+<pre><code class="language-shell">ssh-keygen -t rsa -b 4096 -C &quot;email@example.com&quot;
+# 指定生成的文件
+ssh-keygen -t rsa -b 4096 -C &quot;email@example.com&quot; -f ~/.ssh/id_rsa_example
+# id_rsa_example.pub 粘贴远程仓库
+
+# 配置多个远程仓库
+touch ~/.ssh/config
+
+#添加一下内容
+Host github.com
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa_github
+
+Host example.com
+HostName example.com
+User git
+IdentityFile ~/.ssh/id_rsa_example
+
+</code></pre>
+<p>配置</p>
+<pre><code class="language-bash">git config –global user.name “xxx”
+git config –global user.email “xxx@email.com“
+git config --global core.autocrlf true # 建议配置 windows mac换行符不统一问题
+git config --global core.editor vim # 配置默认编辑器
+git config --global core.excludesfile ~/.gitignore_global # 配置全局忽略文件
+git config –list # 查看配置信息
+</code></pre>
+<p>分支管理</p>
+<pre><code class="language-bash">git branch --list # 罗列本地所有分支
+git branch --all  # 罗列本地和远程所有分支
+git branch -r     # 罗列远程所有分支
+git branch -v     # 显示各分支最后提交信息
+git checkout &lt;branch name&gt; # 切换分支
+git checkout -b &lt;new branch name&gt; # 创建新分支
+git push origin &lt;new branch name&gt; # 推送新分支到远程
+git checkout -m &lt;old branch&gt; &lt;new branch&gt; # 重命名分支名称
+git branch -d &lt;[list]branch name&gt; # 删除本地分支
+git push origin --delete &lt;branch name&gt; # 删除远程分支
+</code></pre>
+<p>标签管理</p>
+<pre><code class="language-bash">git tag -l # 罗列本地所有标签
+git show &lt;tag name&gt; # 显示指定标签
+git tag -a v_1.0.0 -m &quot;备注&quot; # 创建标签
+git push origin &lt;tag name&gt; # 推送标签到远程
+git tag -d &lt;tag name&gt; # 删除本地标签
+git push --delete origin &lt;tag name&gt; # 删除远程标签
+</code></pre>
+<h2 id="总结">总结</h2>
+<p>工作多年以来一直在使用Git，但是对Git没有一个系统了解，所以写这篇文章归整一下。</p>
+<p>欢迎大家留言交流，一起学习分享！！！</p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-05-30 22:32</span>&nbsp;
+<a href="https://www.cnblogs.com/sky233/">一直奋斗的程序猿</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12995362" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12995362);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 331769, cb_blogApp = 'sky233', cb_blogUserGuid = 'c3870f73-a9ef-e611-845c-ac853d9f53ac';
+    var cb_entryId = 12995362, cb_entryCreatedDate = '2020-05-30 22:32', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;"></div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 一直奋斗的程序猿
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

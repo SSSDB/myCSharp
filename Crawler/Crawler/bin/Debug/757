@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="还记得我吗，我是阿Q，CPU一号车间的那个阿Q。 今天忙里偷闲，来到厂里 转转，负责这项工作的小黑正忙得满头大汗。 看到我的到来，小黑指着旁边的座椅示意让我坐下。 坐了好一会儿，小黑才从工位上忙完转过" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CPU瞒着内存竟干出这种事 - 轩辕之风 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=KCO3_f2W_TC__-jZ7phSnmoFkQuWMJH2yAgA16eE3eY" />
+    <link id="MainCss" rel="stylesheet" href="/skins/codinglife/bundle-codinglife.min.css?v=UeHyLv1TT2WTz4TwfUOiMoKNmtFvLUjUnIhFE2UmZ7I" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/xuanyuan/custom.css?v=1KFqgc8N4u9cFrFdaEZzuOblzkw=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/codinglife/bundle-codinglife-mobile.min.css?v=XjHfryC9ctsatIZz1dHn7TsRIqmwz9c3aj_6SCfHSDM" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/xuanyuan/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/xuanyuan/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/xuanyuan/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=6bwfCY2e02dLOXNW99G2BHZkYFmw9QyYTWeJ-W-sudo"></script>
+    <script>
+        var currentBlogId = 193695;
+        var currentBlogApp = 'xuanyuan';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'CodingLife';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <script>loadPageBeginHtml();</script>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/xuanyuan/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/xuanyuan/">轩辕之风</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/xuanyuan/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%BD%A9%E8%BE%95%E4%B9%8B%E9%A3%8E">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/xuanyuan/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+49&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+291</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/xuanyuan/p/12894711.html">CPU瞒着内存竟干出这种事</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <p>还记得我吗，我是阿Q，CPU一号车间的那个阿Q。</p>
+<p>今天忙里偷闲，来到厂里<code>地址翻译部门</code>转转，负责这项工作的小黑正忙得满头大汗。</p>
+<p>看到我的到来，小黑指着旁边的座椅示意让我坐下。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/5da0baeb-0324-4518-b8b5-aa8f2a067bbb.png" alt=""></p>
+<p>坐了好一会儿，小黑才从工位上忙完转过身来，“实在不好意思阿Q，今天活太多，没来得及招待你”</p>
+<p>“刚忙什么呢，看你满头大汗的”，我问道。</p>
+<p>“嗨，别提了，老是发现内存页面错误，不停地要通知操作系统那边去处理，真是怀念以前啊，没有这么多破事儿要管”，小黑叹了口气。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/29773cfd-8594-4770-8d44-6fb3b9d6a2c0.png" alt=""></p>
+<p>我一听来了兴趣，“小黑你给我说说你们的工作呗，地址翻译是怎么一回事儿，为什么怀念以前呢？”</p>
+<p>小黑调整了下坐姿，咕噜咕噜喝了几口水说道，“这话说来可就话长了”</p>
+<p>接下来小黑开始给我讲起了历史故事······</p>
+<h2 id="8086">8086</h2>
+<p>原来咱们的祖先叫8086，小黑还给我看了他的照片</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/6b29f841-6ec4-4860-9dd7-bf41dd8993f1.png" alt=""></p>
+<p>那是一个纯真质朴的年代，虽然工作性能不高，不过那个年代的程序都很简单，我们的祖先一问世就成为了明星，称得上那个时代的顶流了。</p>
+<p>看到照片中的那些金属针脚了吗？那是我们CPU和外界打交道的触角，每一根都有不同的作用。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/3ec514b6-7b4a-4c09-875b-ccefe3cbffb2.png" alt=""></p>
+<p>通过这些触角，CPU就可以跟内存打交道，获取指令和数据，辛勤的干活啦。</p>
+<p>那个年代，条件比较差，能凑合的就凑合，能共用的就共用。这不，你看祖先CPU的地址总线针脚和数据总线针脚就共用了。</p>
+<p>祖先是一个16位的CPU，数据(Data)总线就有16位，一次性可以传输16个比特位。和地址(Address)总线凑合着一起共用，于是就取名AD0-AD15。</p>
+<p>不过祖先的地址总线却不止16个，还多出了A16-A19整整4个呢！这样有20个地址线，可以寻址1MB的内存了！</p>
+<p>但是祖先的寄存器都是16位的啊，只能存放16位的地址。不过他们很聪明，发明了一个叫<code>分段式存储管理</code>的方法，把内存划分为最大64KB的小块，为什么是64KB呢，因为16位地址最多只能寻址这么大了。然后又加了几个叫做段寄存器的东西，指向这些块的开头，这样，通过段地址+段内偏移地址的方式，就能访问更多的内存了。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/bbc550e2-5508-4c08-9a50-a3a19294eb58.png" alt=""></p>
+<h2 id="32位时代">32位时代</h2>
+<p>后来啊，祖先的那点计算能力越来越捉襟见肘，实在是跟不上时代了。家族中的年轻一代开始挑大梁，80286和80386CPU相继问世，尤其是80386，成为了划时代的存在。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/d39143e1-43f2-4dfb-9b73-cc0041b3f3ca.png" alt=""></p>
+<p>到了80386时代，我们与外界通信的引脚就更多了，并且变成了32位的CPU，那个时候，生活条件就变好了，地址线和数据线再也不用共享引脚了。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/fcb5fe93-f0d3-4188-86a5-5671dad302ef.png" alt=""></p>
+<p>后来，人类变得越来越贪心，想要一边听音乐，一边还要上网，同时还要编辑文档，这就同时需要运行多个程序。</p>
+<p>这个时候，有人发现了商机，开发了一个叫<code>操作系统</code>的东西，原来那些程序不再直接和我们CPU打交道了，而是和操作系统打交道，操作系统再和我们打交道，中间商赚差价说的就是他们！</p>
+<p>操作系统这玩意儿很聪明啊，通过时间片划分让我们CPU来轮流执行多个程序，一会儿让我们执行音乐播放，一会儿让我们执行浏览器程序，一会儿又让我们执行文档编辑程序。我们是无所谓啊，给什么代码不是代码啊，我们不挑，埋头苦干就是了。人类的反应速度跟我们就差得远了，他们还以为这些程序真的是同时执行的呢。</p>
+<h2 id="虚拟内存">虚拟内存</h2>
+<p>不过随之而来出现了一个大问题，这么多程序都要运行，大家挤在一个内存里，经常发生摩擦，冲突不断。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/1cbd8de1-1aa8-41ce-8229-d2b158a2ede1.png" alt=""></p>
+<p>先祖们为了此事殚精竭虑，终于想出了一个好办法，一直沿用至今。</p>
+<p>他们提出了一个<code>虚拟地址</code>的东西，所有程序使用的地址都是一个虚拟的地址，在真正和内存打交道的时候，咱们CPU内部工作人员再给翻译成真实的内存地址，关于这事儿，内存那家伙一直被我们蒙在鼓里。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/544dafd1-0bda-4bb0-a48c-34bfc0c2c8a7.png" alt=""></p>
+<p>这样一来，每个程序都可以用的是0x00000000到0xffffffff总共4GB这么大范围的地址空间，当然不会真的给他们那么多空间，内存那家伙总共才4GB呢，而是要按需申请分配。分配的单元是按照<code>页</code>来进行的，32位的CPU一个页是4KB。这些分配管理的累活就让操作系统来干了，中间商不能光拿好处不干正事，至于我们CPU，做好地址翻译的工作就好了。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/d6f6c9e5-97d7-464e-9186-00e776b64888.png" alt=""></p>
+<p>为此，在我们寄存器内部专门添置了一个新的寄存器CR3，用来指向一个地址翻译查询字典，字典划分了两级目录。我们把一个32位的地址划分了3部分，前面两部分分别指向两级目录中的条目，用来定位这个地址在物理内存的哪个页面，最后一部分就是指向物理内存页面的偏移，这样就完成了地址的翻译工作。</p>
+<p>每个进程有不同的地址空间，切换进程的时候，把CR3的内容换一下就使用新进程的翻译字典，特别的方便。</p>
+<p>我们把这种内存管理方式叫做<code>分页式内存管理</code>。</p>
+<p>真佩服先祖们的智慧，这样巧妙的把各个程序隔离开来，后来我们把这种工作模式叫做<code>保护模式</code>，把之前那种直接使用真实内存地址的工作模式叫做<code>实地址模式</code>。</p>
+<h2 id="分页交换">分页交换</h2>
+<p>人类变得越来越贪婪，程序变得越来越多，对内存的需求也越来越大。随着这些程序都不断申请内存页面，内存空间很快就要耗尽了。</p>
+<p>我们看在眼里，急在心里，后来找操作系统协商，看看这问题该怎么办。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/8a2948d1-f3c9-4125-b794-2b41ad24e109.png" alt=""></p>
+<p>操作系统那家伙也不赖，想出了一个好办法。内存的大小有限，但是硬盘给力啊，硬盘空间大的多，去硬盘上划一块区域来，把内存里长时间没有用到的页面给换到这块区域里去，然后做个标记。如果后面谁要访问那个页面，咱们CPU就检查如果有这个标记，就发送一个页错误的中断信号告诉操作系统去把这个页面换回来。</p>
+<p>通过我们之间的配合，解决了内存紧张的危机。后来我们把这个技术叫做<code>内存分页交换</code>。</p>
+<h2 id="现在">现在</h2>
+<p>时间过得很快，到了我们这一辈，内存变得更大了，16GB都是小case，32GB也很常见。</p>
+<p>除了内存，我们CPU本身也更先进了，别的不说，你光看看咱们现在的引脚数那比先祖们那几辈就不可同日而语。</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/0450d6fd-e391-40ad-b8f1-461bb6e7e44a.png" alt=""></p>
+<p>我们不仅从32位变成了64位，还从单核变成了多核，像我所在的CPU就有8个车间，8核并行执行，比起先祖那个年代简直有云泥之别。</p>
+<h2 id="彩蛋">彩蛋</h2>
+<blockquote>
+<p>和小黑闲谈间，我们车间的老K突然出现在了门口。</p>
+<p>“阿Q原来你在这里，让我好找，赶快回去吧，隔壁二号车间的虎子说我们改了他们的数据，上门来闹事了······”</p>
+<p><em>预知后事如何，请关注后续精彩······</em></p>
+</blockquote>
+<h2 id="往期热门回顾">往期热门回顾</h2>
+<p><a href="https://mp.weixin.qq.com/s/5_JN7trS_lS3Nnw5u12p6g">完了！CPU一味求快出事儿了！</a></p>
+<p><a href="https://mp.weixin.qq.com/s/jo6pF4yQ8CU809M1dxo-Yw">可怕！CPU竟成了黑客的帮凶！</a></p>
+<p><a href="https://mp.weixin.qq.com/s/h0FqX9AZByfpgUZrsRVTWg">哈希表哪家强？几大编程语言吵起来了！</a></p>
+<p><a href="https://mp.weixin.qq.com/s/v6nc9aIBY_R1S6ToPzj5Qg">内核地址空间大冒险4:线程切换</a></p>
+<p><a href="https://mp.weixin.qq.com/s/XrtH9-Eo7pzJu-Fzt89voQ">震撼！全网第一张源码分析全景图揭秘Nginx</a></p>
+<p><a href="https://mp.weixin.qq.com/s/gZPxqZzY2rnngxvvzexWTw">一个整数＋1引发的灾难</a></p>
+<p><a href="https://mp.weixin.qq.com/s/V7wBdl-5W4ehTAnACQFjGQ">一网打尽！每个程序猿都该了解的黑客技术大汇总</a></p>
+<p><a href="https://mp.weixin.qq.com/s/Bb2ugXYPR6r11QaGKbNBSw">看过无数Java GC文章，这5个问题你也未必知道！</a></p>
+<p><a href="https://mp.weixin.qq.com/s/xp2S4_3UQTZ0TOIlVqM8uw">一个Java对象的回忆录：垃圾回收</a></p>
+<p><a href="https://mp.weixin.qq.com/s/lxpHhHVIh6DktoHzrRLaKA">谁动了你的HTTPS流量？</a></p>
+<p><a href="https://mp.weixin.qq.com/s/7gM31s4-hTJTprJnxsHgEA">路由器里的广告秘密</a></p>
+<p><a href="https://mp.weixin.qq.com/s/suzicCzb2g5b8NN71S5Ngw">一个HTTP数据包的奇幻之旅</a></p>
+<p><a href="https://mp.weixin.qq.com/s/-ggUa3aWkjjHjr9VwQL9TQ">我是一个流氓软件线程</a></p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/62b181b0-cb63-47a0-b836-131de3a562c7.png" alt=""></p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/06d25f4e-bd38-404b-a901-173737bb7ccf.png" alt=""></p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-05-15 14:22</span>&nbsp;
+<a href="https://www.cnblogs.com/xuanyuan/">轩辕之风</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12894711" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12894711);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 193695, cb_blogApp = 'xuanyuan', cb_blogUserGuid = '8508cac9-f21a-e411-8d02-90b11c0b17d6';
+    var cb_entryId = 12894711, cb_entryCreatedDate = '2020-05-15 14:22', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;"></div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 轩辕之风
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

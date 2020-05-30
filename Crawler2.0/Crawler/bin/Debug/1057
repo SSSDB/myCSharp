@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>尽是妖 - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=KCO3_f2W_TC__-jZ7phSnmoFkQuWMJH2yAgA16eE3eY" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simpleblue/bundle-simpleblue.min.css?v=A3b2aPJdyRz0wsOsfRnhl-bqaa45nYsYwvEqo53RYFs" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/simpleblue/bundle-simpleblue-mobile.min.css?v=X7swQJ1TyCJAf6FMVjDPbYhUAiMdNFddEy1-m0_TbFQ" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/aoximin/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/aoximin/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/aoximin/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=6bwfCY2e02dLOXNW99G2BHZkYFmw9QyYTWeJ-W-sudo"></script>
+    <script>
+        var currentBlogId = 452033;
+        var currentBlogApp = 'aoximin';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'SimpleBlue';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <link href="https://files.cnblogs.com/files/aoximin/cnblog-scroller.css" type="text/css" rel="stylesheet">
+<script src="https://files.cnblogs.com/files/aoximin/scrollspy.js" type="text/javascript" defer></script>
+<script src="https://files.cnblogs.com/files/aoximin/stickUp.min.js" type="text/javascript" defer></script>
+<script src="https://files.cnblogs.com/files/aoximin/cnblog-scroller.js" type="text/javascript" defer></script>
+    </div>
+    <div id="home">
+    <div id="header">
+        <div id="blogTitle">
+            
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/aoximin/">不要浪费一场危机——丘吉尔</a>
+</div>
+<div class="subtitle">
+盛宴之下，波诡云谲
+</div>
+
+        </div>
+        <div id="navigator">
+            
+<ul id="navList">
+    <li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+    <li id="nav_myhome">
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/aoximin/">
+首页</a>
+</li>
+    <li id="nav_newpost">
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+    <li id="nav_contact">
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%B0%BD%E6%98%AF%E5%A6%96">
+联系</a></li>
+    <li id="nav_rss">
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/aoximin/rss/">
+订阅</a></li>
+    <li id="nav_admin">
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+            <div class="blogStats">
+                
+<span id="stats_post_count">随笔 - 
+224&nbsp;</span>
+<span id="stats_article_count">文章 - 
+1&nbsp;</span>
+<!-- <span id="stats-comment_count"></span> -->
+<span id="stats_comment_count">评论 - 
+52</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainContent">
+            <div class="forFlow">
+                
+
+
+
+
+
+
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/aoximin/archive/2020/05/30.html">2020年5月30日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12994754.html">
+    mysql 重新整理——七种连接join连接[六] 
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 总结一下其中join连接。 正文 又到了盗图时刻: 上面标记好了顺序。 第一种: select * from A a left join B b on a.key=b.key 这里解释一下，这里就是A B 之间用A key 去做笛卡尔积，以左边A为主。 第二种: select * from A            <a href="https://www.cnblogs.com/aoximin/p/12994754.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-30 22:40
+尽是妖
+<span class="post-view-count">阅读(5)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12994754" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12992719.html">
+    mysql 重新整理——sql 执行语句的顺序[五] 
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 盗图: 其实在复杂的语句中，需要我们逐步去分析，然后呢，我们了解一些优化器到底是如何帮我们优化的，就知道到底是mysql怎么执行代码。 我把以前的丢了，后续补全。            <a href="https://www.cnblogs.com/aoximin/p/12992719.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-30 20:15
+尽是妖
+<span class="post-view-count">阅读(4)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12992719" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12991970.html">
+    mysql 重新整理——性能下降的原因[四] 
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 什么是性能下降？ 其实就是代码运行的环境变了，那么环境变化是什么? 比如cpu上升了，内存满了。有或者表中数量增加了，量变了。 其实这些是dba干的，但是呢，我们也需要去了解下，并且优化我们的code。 正文 简单介绍一个量大的情况，那么这个时候我们可能会建立索引，其实也不是量大去建立索引，而            <a href="https://www.cnblogs.com/aoximin/p/12991970.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-30 14:59
+尽是妖
+<span class="post-view-count">阅读(8)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12991970" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12991950.html">
+    mysql 重新整理——存储引擎[三] 
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 要知道存储引擎这个东西，不是存储的意思，而是io操作。 MySQL中的数据用各种不同的技术存储在文件（或者内存）中。这些技术中的每一种技术都使用不同的存储机制、索引技巧、锁定水平并且最终提供广泛的不同的功能和能力。 通过选择不同的技术，你能够获得额外的速度或者功能，从而改善你的应用的整体功能。            <a href="https://www.cnblogs.com/aoximin/p/12991950.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-30 12:30
+尽是妖
+<span class="post-view-count">阅读(7)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12991950" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12991827.html">
+    mysql 重新整理——逻辑架构[二]
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 在此简洁逻辑架构，mysql的基础逻辑架构其实和sql server很像的。 正文 首先是客户端，发起了连接。 然后呢连接池后那一块，就是有分析器的那一块，那一块是干啥的呢。 其实我们写的语句呢，在mysql 不是这样子的，它要转换成自己的查询语句，通俗的说，我们调用的其实是api，不是真正的            <a href="https://www.cnblogs.com/aoximin/p/12991827.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-30 12:06
+尽是妖
+<span class="post-view-count">阅读(4)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12991827" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12991467.html">
+    mysql 重新整理——配置文件[一]
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 对mysql 进行从新整理一下，仅做参考，如有任何不对望指出。 正文 mysql 一般分windows和linux，但是他们的运行配置其实是一样的，所以在此不做区分。 直接上一个大体的图： 我个人用的是xmpp，说到底不管什么来管理mysql呢，其实都是一样的。 看第一个二进制文件配置 log            <a href="https://www.cnblogs.com/aoximin/p/12991467.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-30 11:13
+尽是妖
+<span class="post-view-count">阅读(4)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12991467" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/aoximin/archive/2020/05/29.html">2020年5月29日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12988350.html">
+    混合app 解决常见bug弹出键盘返回出现闪屏
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 在我们开发混合app中，我们会发现一个问题，那就是比如我们正在输入信息的时候，然后我们按导航的返回键返回，因为切页面和回收键盘是同时的，给人一种闪屏的感觉，那么怎么解决呢? 方案 以ionic为例子: 设置一个变量监听当前是否键盘弹出。 showKeyboard: boolean = fals            <a href="https://www.cnblogs.com/aoximin/p/12988350.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-29 16:50
+尽是妖
+<span class="post-view-count">阅读(9)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12988350" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/aoximin/archive/2020/05/28.html">2020年5月28日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12975016.html">
+    c# 优化代码的一些规则——字符串使用优化[四]
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 在我们的程序中，经常使用到字符串，字符串的写法非常多，但是有一个问题就是我们写的字符串是否合适呢？ 正文 内插符 介绍一个东西叫做内插字符，如下: static void Main(string[] args) { string w = &amp;quot;Word&amp;quot;; string s = $&amp;quot;Hello {            <a href="https://www.cnblogs.com/aoximin/p/12975016.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-28 10:20
+尽是妖
+<span class="post-view-count">阅读(19)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(2)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12975016" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/aoximin/archive/2020/05/27.html">2020年5月27日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12969752.html">
+    面向切面编程AOP[四]（java AnnotationAwareAspectJAutoProxyCreator与ioc的联系） 
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 拿出上一篇的内容: AnnotationAwareAspectJAutoProxyCreator extends AspectJAwareAdvisorAutoProxyCreator AspectJAwareAdvisorAutoProxyCreator extends AbstractAd            <a href="https://www.cnblogs.com/aoximin/p/12969752.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-27 23:08
+尽是妖
+<span class="post-view-count">阅读(12)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(0)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12969752" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/aoximin/p/12965408.html">
+    c# 优化代码的一些规则——使用is或as和强制类型转换的区别[三]
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前言 使用as和强制类型转换的时候的区别是否仅仅是代码形式上的区别。 答案是肯定不是的。 正文 看两段代码: object o = Factory.GetObject(); Student student = o as Student; if (student != null) { //dosome            <a href="https://www.cnblogs.com/aoximin/p/12965408.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            posted @ 2020-05-27 17:57
+尽是妖
+<span class="post-view-count">阅读(216)</span><text> </text>
+<span class="post-comment-count">评论(0)</span><text> </text>
+<span class="post-digg-count">推荐(2)</span><text> </text>
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12965408" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/aoximin/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+            </div>
+        </div>
+
+        <div id="sideBar">
+            <div id="sideBarMain">
+                
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2020 尽是妖
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+    </div>
+</div>
+
+    
+</body>
+</html>

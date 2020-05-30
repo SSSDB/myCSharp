@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="always" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>编程语言 - 网站分类 - 博客园</title>
+    <link rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    <link rel="Stylesheet" type="text/css" href="/css/aggsite.min.css?v=XVK9pBwACFM32BSjHQ3T_N9NQGXjkUDwYVLWn2h19Dg" />
+        <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://feed.cnblogs.com/blog/sitecateogry/2/rss" />
+    <script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>
+    <script src="/js/aggsite.min.js?v=SMfb3cvJ_BVQu17ffdyLH0AsFTOFX87b871AzEvWXNo"></script>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/1090369/A1', [468, 60], 'div-gpt-ad-1547816814884-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B1', [300, 250], 'div-gpt-ad-1546331539224-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B2', [300, 250], 'div-gpt-ad-1539007469525-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B3', [300, 250], 'div-gpt-ad-1546331252242-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B4', [300, 250], 'div-gpt-ad-1546331385104-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+
+        /**/</script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="hd_info">
+            <div id="cnts">
+                <div id="site_nav_top">代码改变世界</div>
+                <div id="login_area"><span id="span_userinfo"></span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="header">
+            <p class="h_r_3"></p><p class="h_r_2"></p><p class="h_r_1"></p>
+            <div id="header_block">
+                <div id="logo">
+                    <h1>
+                        <a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo_small.gif" alt="博客园Logo" width="142" height="55" /></a>
+                    </h1>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <p class="h_r_1"></p><p class="h_r_2"></p><p class="h_r_3"></p>
+        </div>
+        <div id="nav_menu"><a href="https://home.cnblogs.com/">园子</a><a href="https://news.cnblogs.com">新闻</a><a href="https://q.cnblogs.com/">博问</a><a href="https://ing.cnblogs.com/">闪存</a><a href="https://group.cnblogs.com/">小组</a><a href="https://wz.cnblogs.com/">收藏</a><a href="https://job.cnblogs.com/">招聘</a><a href="https://edu.cnblogs.com/">班级</a><a href="http://zzk.cnblogs.com/">找找看</a></div>
+        <div id="main">
+            <div class="post_nav_block_wrapper">
+                <ul class="post_nav_block">
+                        <li><a href="/" id="tabnav_" class="" title="">首页</a></li>
+                        <li><a href="/cate/2/" id="tabnav_cate2" class="current_nav" title="">编程语言</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="rss_link" id="rss_block">
+<span id="posts_refresh_tips"></span><a id="posts_refresh" href="#" class="refresh" title="刷新博文列表" onclick="aggSite.loadCategoryPostList();return false">刷新</a><a href="http://feed.cnblogs.com/blog/sitecateogry/2/rss"><img src="//common.cnblogs.com/images/icon_rss.gif" alt="点击订阅" style="position:relative;top:2px;" title="订阅博客园文章" /></a>            </div>
+                <div id="headline_block" class="headline"><ul><li class="editor_pick"><a href="https://www.cnblogs.com/coco1s/p/12980682.html" id="editor_pick_lnk" target="_blank">【编辑推荐】巧用 display: contents 增强页面语义<span id="editor_pick_count"></span></a> <a href="/aggsite/headline" title="查看更多编辑推荐" class="right_more">»</a></li><li><a href="https://www.cnblogs.com/shanyou/p/12995227.html" target="_blank" title="阅读401, 评论6, 推荐5">[最多推荐]TechEmpower Web 框架性能第19轮测试结果正式发布，ASP.NET Core在主流框架中拔得头筹(6/401)</a> <a href="/aggsite/topdigged24h" title="查看24小时推荐排行" class="right_more">»</a></li><li><a href="https://news.cnblogs.com/n/663055/" target="_blank" title="阅读576, 评论0, 推荐4">[新闻头条]华为和它的“备胎”大军们(0/576)</a> <a href="https://news.cnblogs.com/" title="查看更多新闻" class="right_more">»</a></li><li><a href="https://news.cnblogs.com/n/663027/" target="_blank" title="阅读905, 评论3, 推荐2">[推荐新闻]专为「神盾局」打造的软体机器人：通用电气出品，能挖隧道，可军用(3/905)</a> <a href="https://news.cnblogs.com/n/recommend" title="查看更多推荐新闻" class="right_more">»</a></li></ul></div>
+
+            <div id="pager_top" style="display:none"></div>
+            <div id="post_list_tips" class="hide"></div>
+            
+            <div id="post_list">
+                <div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('bitssea',12996226,589112,1)"> 
+	<span class="diggnum" id="digg_count_12996226">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12996226" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/bitssea/archive/2020/05/31/12996226.html" target="_blank">PythonのTkinter基本原理 - 小白篇</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/bitssea/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1980108/20200322194414.png" alt=""/></a>    本文讲解，Python Tkinter 库，的基本原理，白话讲解，面向小白。 Tkinter 是什么： Tkinter 是 Python 自带的一个，标准库，用于快速创造，简单的 GUI 程序。 为什么要了解 Tkinter： 首先，因为这个库，是 Python 自带的，所以非常方便，随叫随到的那种 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/bitssea/" class="lightblue">Bitssea</a> 
+    发布于 2020-05-31 02:09 
+    <span class="article_comment"><a href="https://www.cnblogs.com/bitssea/archive/2020/05/31/12996226.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/bitssea/archive/2020/05/31/12996226.html" class="gray">阅读(2)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('Delta2019',12995698,568354,1)"> 
+	<span class="diggnum" id="digg_count_12995698">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12995698" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/Delta2019/archive/2020/05/30/12995698.html" target="_blank">Unsolved --&gt; Solved   OJ思路题解</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/Delta2019/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1857172/20191103220303.png" alt=""/></a>    L2-4 部落 在一个社区里，每个人都有自己的小圈子，还可能同时属于很多不同的朋友圈。我们认为朋友的朋友都算在一个部落里，于是要请你统计一下，在一个给定社区中，到底有多少个互不相交的部落？并且检查任意两个人是否属于同一个部落。 输入格式： 输入在第一行给出一个正整数N（≤1e4），是已知小圈子的个数 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/Delta2019/" class="lightblue">Delta_in_Cnblogs</a> 
+    发布于 2020-05-30 23:44 
+    <span class="article_comment"><a href="https://www.cnblogs.com/Delta2019/archive/2020/05/30/12995698.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/Delta2019/archive/2020/05/30/12995698.html" class="gray">阅读(7)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('Delta2019',12995691,568354,1)"> 
+	<span class="diggnum" id="digg_count_12995691">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12995691" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/Delta2019/archive/2020/05/30/12995691.html" target="_blank">二叉搜索树_BST</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/Delta2019/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1857172/20191103220303.png" alt=""/></a>    二叉搜索树 定义 二叉查找树（英语：Binary Search Tree），也称为二叉搜索树、有序二叉树（ordered binary tree）或排序二叉树（sorted binary tree），是指一棵空树或者具有下列性质的二叉树： 若任意节点的左子树不空，则左子树上所有节点的值均小于它的根节 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/Delta2019/" class="lightblue">Delta_in_Cnblogs</a> 
+    发布于 2020-05-30 23:43 
+    <span class="article_comment"><a href="https://www.cnblogs.com/Delta2019/archive/2020/05/30/12995691.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/Delta2019/archive/2020/05/30/12995691.html" class="gray">阅读(9)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('snidget',12995676,83095,1)"> 
+	<span class="diggnum" id="digg_count_12995676">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12995676" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/snidget/archive/2020/05/30/12995676.html" target="_blank"> DDD之2领域概念</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/snidget/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/268922/20190926111628.png" alt=""/></a>    图中是暗黑领域，非常牛逼的技能。 背景 DDD中出现的名词： 领域，子领域，核心域，通用域，支撑域，限界上下文，聚合，聚合根，实体，值对象 都是关键概念，但是又比较晦涩，在开始DDD之前，搞清楚这些关键概念名词非常的重要。 那它们作用体现在哪里呢？ 领域-子领域 领域是： 从事专门活动或者事业的范围 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/snidget/" class="lightblue">李福春</a> 
+    发布于 2020-05-30 23:39 
+    <span class="article_comment"><a href="https://www.cnblogs.com/snidget/archive/2020/05/30/12995676.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/snidget/archive/2020/05/30/12995676.html" class="gray">阅读(23)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('suui90',12995583,589565,1)"> 
+	<span class="diggnum" id="digg_count_12995583">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12995583" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/suui90/archive/2020/05/30/12995583.html" target="_blank">C++ 模板类vector</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/suui90/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1982628/20200323224803.png" alt=""/></a>    #include&lt;vector&gt; // 包含头文件vector ... using namespace std; // vector包含在std中，因此必须包含std::vector vector &lt;int&gt; vi; // create a zero-size array of int int n; ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/suui90/" class="lightblue">绿豆sir</a> 
+    发布于 2020-05-30 23:14 
+    <span class="article_comment"><a href="https://www.cnblogs.com/suui90/archive/2020/05/30/12995583.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/suui90/archive/2020/05/30/12995583.html" class="gray">阅读(4)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('gousheng123',12995424,605307,1)"> 
+	<span class="diggnum" id="digg_count_12995424">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12995424" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/gousheng123/archive/2020/05/30/12995424.html" target="_blank">python基础之全局变量与globals函数</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/gousheng123/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/2041052/20200530111457.png" alt=""/></a>    python的变量是存在作用域的,在代码中不同位置的变量作用的范围会有所不同，比如有的变量在整段代码中都可以使用，有的变量却只在函数内部使用。python中把能够在整段代码任意位置有效的变量称为全局变量，只在函数内部使用的变量称作局部变量。 全局变量： a = 520 #此时a作为全局变量 def  ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/gousheng123/" class="lightblue">薛定谔的狗剩</a> 
+    发布于 2020-05-30 22:44 
+    <span class="article_comment"><a href="https://www.cnblogs.com/gousheng123/archive/2020/05/30/12995424.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/gousheng123/archive/2020/05/30/12995424.html" class="gray">阅读(11)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('Butterfly-Tri',12995333,604242,1)"> 
+	<span class="diggnum" id="digg_count_12995333">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12995333" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/Butterfly-Tri/archive/2020/05/30/12995333.html" target="_blank">Spring Boot 教程 - Test</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/Butterfly-Tri/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/2039191/20200515235136.png" alt=""/></a>    1. 应用测试的介绍 一般我们在写完代码之后，代码的测试是会给专门的测试人员来测试的，如果一个测试跑到你的工位上对你说，你的代码好像有Bug，你肯定会不爽，反正我就是这样的&#128579;。所以为了显示自己的代码质量高一点，在功能提交给测试之前，我们会自己测试一下，接下来给大家介绍一下 Spring Boot  ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/Butterfly-Tri/" class="lightblue">Butterfly-Tri</a> 
+    发布于 2020-05-30 22:25 
+    <span class="article_comment"><a href="https://www.cnblogs.com/Butterfly-Tri/archive/2020/05/30/12995333.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/Butterfly-Tri/archive/2020/05/30/12995333.html" class="gray">阅读(11)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('python0921',12994896,589469,1)"> 
+	<span class="diggnum" id="digg_count_12994896">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12994896" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/python0921/archive/2020/05/30/12994896.html" target="_blank">Python实现YY评级分数的爬取，并保存数据（附代码）</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/python0921/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1978813/20200320172337.png" alt=""/></a>    前言 本文的文字及图片来源于网络,仅供学习、交流使用,不具有任何商业用途,版权归原作者所有,如有问题请及时联系我们以作处理。 当需要进行大规模查询时（比如目前遇到的情形：查询某个省所有发债企业的YY评级分数），人工查询显然太过费时，那就写个爬虫吧。 由于该爬虫实在过于简单，就只简单概述下。 一、请求 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/python0921/" class="lightblue">其实还好啦</a> 
+    发布于 2020-05-30 20:52 
+    <span class="article_comment"><a href="https://www.cnblogs.com/python0921/archive/2020/05/30/12994896.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/python0921/archive/2020/05/30/12994896.html" class="gray">阅读(14)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('Cion-Da',12988250,471934,1)"> 
+	<span class="diggnum" id="digg_count_12988250">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12988250" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/Cion-Da/archive/2020/05/30/12988250.html" target="_blank">跟着阿里学JavaDay02——Java编程起步</a></h3>               	
+    <p class="post_item_summary">
+    几乎所有语言的第一个程序都是&quot;HelloWorld&quot; 就像所有单片机初学者一样，点亮第一个LED灯开始 而起初我们编写/学习Java程序，都是通过记事本来编写的，这里推荐一个Editplus（提取码：qq1t）记事本文件给大家 这里要分清楚一个概念，所有Java源程序的后缀都是*.Java，可以新建 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/Cion-Da/" class="lightblue">Cion-Da</a> 
+    发布于 2020-05-30 20:21 
+    <span class="article_comment"><a href="https://www.cnblogs.com/Cion-Da/archive/2020/05/30/12988250.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/Cion-Da/archive/2020/05/30/12988250.html" class="gray">阅读(71)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('dcpeng',12994462,427448,1)"> 
+	<span class="diggnum" id="digg_count_12994462">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12994462" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/dcpeng/archive/2020/05/30/12994462.html" target="_blank">用Python做词云可视化带你分析海贼王、火影和死神三大经典动漫</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/dcpeng/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1380669/20180419122326.png" alt=""/></a>    对于动漫爱好者来说，海贼王、火影、死神三大动漫神作你肯定肯定不陌生了。小编身边很多的同事仍然深爱着这些经典神作，可见“中毒”至深。今天小编利用Python大法带大家分析一下这些神作，看看这些神作到底在讲些神马。 人生苦短，我用Python。小编利用Python网络爬虫爬取了豆瓣网，将网站上关于这三部 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/dcpeng/" class="lightblue">dcpeng</a> 
+    发布于 2020-05-30 19:27 
+    <span class="article_comment"><a href="https://www.cnblogs.com/dcpeng/archive/2020/05/30/12994462.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/dcpeng/archive/2020/05/30/12994462.html" class="gray">阅读(29)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('qiangshangkeji',12994458,582475,1)"> 
+	<span class="diggnum" id="digg_count_12994458">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12994458" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/qiangshangkeji/archive/2020/05/30/12994458.html" target="_blank">Linux命令之top命令介绍</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/qiangshangkeji/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1959203/20200303202319.png" alt=""/></a>    Linux命令之top命令介绍 top命令是Linux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。下面详细介绍它的使用方法。 top是一个动态显示过程,即可以通过用户按键来不断刷新当前状态.如果在前台执行该命令,它将独占前台,直到用户终止该程序为 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/qiangshangkeji/" class="lightblue">河北强商网络科技公司</a> 
+    发布于 2020-05-30 19:26 
+    <span class="article_comment"><a href="https://www.cnblogs.com/qiangshangkeji/archive/2020/05/30/12994458.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/qiangshangkeji/archive/2020/05/30/12994458.html" class="gray">阅读(9)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('MonsterJ',12994418,587183,1)"> 
+	<span class="diggnum" id="digg_count_12994418">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12994418" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/MonsterJ/archive/2020/05/30/12994418.html" target="_blank">高吞吐量的分布式发布订阅消息系统Kafka之Producer源码分析</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/MonsterJ/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1973721/20200323200835.png" alt=""/></a>    引言 Kafka是一款很棒的消息系统，今天我们就来深入了解一下它的实现细节，首先关注Producer这一方。 要使用kafka首先要实例化一个KafkaProducer，需要有brokerIP、序列化器等必要Properties以及acks（0、1、n）、compression、retries、ba ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/MonsterJ/" class="lightblue">北柠java</a> 
+    发布于 2020-05-30 19:13 
+    <span class="article_comment"><a href="https://www.cnblogs.com/MonsterJ/archive/2020/05/30/12994418.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/MonsterJ/archive/2020/05/30/12994418.html" class="gray">阅读(23)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('shuopython',12994318,537806,1)"> 
+	<span class="diggnum" id="digg_count_12994318">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12994318" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/shuopython/archive/2020/05/30/12994318.html" target="_blank">5.C语言入门 Hello World</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/shuopython/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/641604/20190903204048.png" alt=""/></a>    在上一篇文章中我们创建了第一个项目&#160;Hello World&#160;,项目是创建好了，但还不知道这个 Hello World 是个啥玩意？到底怎么运行？ 一.Hello World源码 我们将hello world.cpp的内容修改如下如下： // hello world.cpp : 定义控制台应用程序的入 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/shuopython/" class="lightblue">猿说Python/C++</a> 
+    发布于 2020-05-30 18:55 
+    <span class="article_comment"><a href="https://www.cnblogs.com/shuopython/archive/2020/05/30/12994318.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/shuopython/archive/2020/05/30/12994318.html" class="gray">阅读(8)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('54chensongxia',12994130,535435,1)"> 
+	<span class="diggnum" id="digg_count_12994130">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12994130" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/54chensongxia/archive/2020/05/30/12994130.html" target="_blank">JVM系列.JDK演进历史</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/54chensongxia/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1775037/20190828231333.png" alt=""/></a>    Java程序员为什么要了解虚拟机相关的知识 Java程序在设计之初就号称“一次编译，到处运行”。Java之所以能做到“一次编译，处处运行”是因为Java虚拟机隐藏了底层技术的复杂性以及机器和操作系统的差异性。 运行程序的物理机千差万别，而Java虚拟机则在千差万别的物理机上面建立了统一的运行平台，实 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/54chensongxia/" class="lightblue">程序员自由之路</a> 
+    发布于 2020-05-30 18:19 
+    <span class="article_comment"><a href="https://www.cnblogs.com/54chensongxia/archive/2020/05/30/12994130.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/54chensongxia/archive/2020/05/30/12994130.html" class="gray">阅读(15)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('JIATCODE',12993781,576322,1)"> 
+	<span class="diggnum" id="digg_count_12993781">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12993781" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/JIATCODE/archive/2020/05/30/12993781.html" target="_blank"> Spring Boot的配置（配置文件，加载顺序，配置原理）之配置文件</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/JIATCODE/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1924372/20200117111841.png" alt=""/></a>    Spring Boot的配置（配置文件，加载顺序，配置原理）之配置文件 配置文件 Spring Boot使用一个全局配置文件，配置文件名是固定的 application.properties application.yml 配置文件的作用：修改Spring Boot自动配置的默认值，即修改Sprin ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/JIATCODE/" class="lightblue">J,IAT</a> 
+    发布于 2020-05-30 17:23 
+    <span class="article_comment"><a href="https://www.cnblogs.com/JIATCODE/archive/2020/05/30/12993781.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/JIATCODE/archive/2020/05/30/12993781.html" class="gray">阅读(17)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('yunxi520',12993139,567564,1)"> 
+	<span class="diggnum" id="digg_count_12993139">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12993139" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993139.html" target="_blank">华为开发常用的2款利器，推荐给大家</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/yunxi520/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1892324/20191221171952.png" alt=""/></a>    Fiddler Fiddler是位于客户端和服务器端的HTTP代理，也是目前最常用的http抓包工具之一 。它能够记录客户端和服务器之间的所有 HTTP请求，可以针对特定的HTTP请求，分析请求数据、设置断点、调试web应用、修改请求的数据，甚至可以修改服务器返回的数据，功能非常强大，是web调试的 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/yunxi520/" class="lightblue">Myname。</a> 
+    发布于 2020-05-30 16:01 
+    <span class="article_comment"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993139.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993139.html" class="gray">阅读(13)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('yunxi520',12993126,567564,1)"> 
+	<span class="diggnum" id="digg_count_12993126">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12993126" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993126.html" target="_blank">据说别人的代码能杀人于无形？</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/yunxi520/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1892324/20191221171952.png" alt=""/></a>    写在最后 程序员为何害怕【别人的代码】呢？这让我想起一个段子。 写这段代码时 只有上帝和我知道他是干嘛的 现在 只有上帝知道了 别人的代码，似乎总意味着冗长、晦涩、凌乱，给人一种不想靠近的感觉。搞笑的是，对于一些程序员而言，即使是自己的代码，在一段时间之后自己再拿来看，也成了【别人的代码】... 作 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/yunxi520/" class="lightblue">Myname。</a> 
+    发布于 2020-05-30 16:00 
+    <span class="article_comment"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993126.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993126.html" class="gray">阅读(10)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('yunxi520',12993111,567564,1)"> 
+	<span class="diggnum" id="digg_count_12993111">1</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12993111" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993111.html" target="_blank">如何定位生产上CPU飙高100%的问题？</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/yunxi520/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1892324/20191221171952.png" alt=""/></a>    概括来说，分三步： 1，首先找到是哪个进程的CPU占有率飙到了100%。 2，根据进程号pid，定位到是哪个线程，找到对应线程的tid。 3，导出对应线程的dump日志文件，分析日志文件定位具体代码。 要解决这个问题，你应该具备以下技能： 1，linux的top命令。 2，jvm监控工具jps。 3 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/yunxi520/" class="lightblue">Myname。</a> 
+    发布于 2020-05-30 15:58 
+    <span class="article_comment"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993111.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993111.html" class="gray">阅读(19)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('yunxi520',12993103,567564,1)"> 
+	<span class="diggnum" id="digg_count_12993103">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12993103" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993103.html" target="_blank">只有程序员才能看懂的车牌，哈哈哈</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/yunxi520/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1892324/20191221171952.png" alt=""/></a>    先上图： @IT程序猿 微博网友评论： @迢书：前同事的，亲眼见过 @AvenGeeker：Bug 404 @科技州：这是要逼死强迫症 @小岛一瞥：哈哈哈哈哈我老家的车 最后小编整理了一套技术资料不仅能精准消除技术盲点、累计面试经验，更可以攻克JVM、Spring、分布式、微服务等技术难题。 海量电 ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/yunxi520/" class="lightblue">Myname。</a> 
+    发布于 2020-05-30 15:57 
+    <span class="article_comment"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993103.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993103.html" class="gray">阅读(29)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('yunxi520',12993091,567564,1)"> 
+	<span class="diggnum" id="digg_count_12993091">0</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12993091" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993091.html" target="_blank">天天在用Redis，那你对Redis的AOF持久化到底了解多少呢？</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/yunxi520/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1892324/20191221171952.png" alt=""/></a>    为什么需要持久化，以及Redis持久化的RDB方式在这篇文章讲的已经很透彻了，足以吊打面试官了。而且此篇内容需要RDB文章的内容支持，所以建议先看下：看完这篇还不懂Redis的RDB持久化，你们来打我！ 一、什么是AOF 它也是Redis持久化的重要手段之一，aof-&gt;Append Only Fil ...
+    </p>
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/yunxi520/" class="lightblue">Myname。</a> 
+    发布于 2020-05-30 15:56 
+    <span class="article_comment"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993091.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/yunxi520/archive/2020/05/30/12993091.html" class="gray">阅读(11)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+   
+
+            </div>
+            <script>editorPickStat(); aggSite.user.getUserInfo();</script>
+            <script type="text/javascript">
+                var aggSiteModel = {"CategoryType":"TopSiteCategory","ParentCategoryId":0,"CategoryId":2,"PageIndex":1,"TotalPostCount":4000,"ItemListActionName":"AggSitePostList"};
+            </script>
+            <div id="pager_bottom"><div id="paging_block"><div class="pager"><a href="/cate/2/" class="p_1 current" onclick="aggSite.loadCategoryPostList(1,20);buildPaging(1);return false;">1</a><a href="/cate/2/2" class="p_2 middle" onclick="aggSite.loadCategoryPostList(2,20);buildPaging(2);return false;">2</a><a href="/cate/2/3" class="p_3 middle" onclick="aggSite.loadCategoryPostList(3,20);buildPaging(3);return false;">3</a><a href="/cate/2/4" class="p_4 middle" onclick="aggSite.loadCategoryPostList(4,20);buildPaging(4);return false;">4</a><a href="/cate/2/5" class="p_5 middle" onclick="aggSite.loadCategoryPostList(5,20);buildPaging(5);return false;">5</a><a href="/cate/2/6" class="p_6 middle" onclick="aggSite.loadCategoryPostList(6,20);buildPaging(6);return false;">6</a><a href="/cate/2/7" class="p_7 middle" onclick="aggSite.loadCategoryPostList(7,20);buildPaging(7);return false;">7</a><a href="/cate/2/8" class="p_8 middle" onclick="aggSite.loadCategoryPostList(8,20);buildPaging(8);return false;">8</a><a href="/cate/2/9" class="p_9 middle" onclick="aggSite.loadCategoryPostList(9,20);buildPaging(9);return false;">9</a><a href="/cate/2/10" class="p_10 middle" onclick="aggSite.loadCategoryPostList(10,20);buildPaging(10);return false;">10</a><a href="/cate/2/11" class="p_11 middle" onclick="aggSite.loadCategoryPostList(11,20);buildPaging(11);return false;">11</a><span class="ellipsis">···</span><a href="/cate/2/200" class="p_200 last" onclick="aggSite.loadCategoryPostList(200,20);buildPaging(200);return false;">200</a><a href="/cate/2/2" onclick="aggSite.loadCategoryPostList(2,20);buildPaging(2);return false;">Next &gt;</a></div></div><script type="text/javascript">var pagingBuider={"OnlyLinkText":false,"TotalCount":4000,"PageIndex":1,"PageSize":20,"ShowPageCount":5,"SkipCount":0,"UrlFormat":"/cate/2/{0}","OnClickJsFunc":"aggSite.loadCategoryPostList()","FirstPageLink":"/cate/2/","AjaxUrl":"/AggSite/Pager","AjaxCallbak":null,"TopPagerId":"pager_top","IsRenderScript":true};function buildPaging(pageIndex){pagingBuider.PageIndex=pageIndex;$.ajax({url:pagingBuider.AjaxUrl,data:JSON.stringify(pagingBuider),type:'post',dataType:'text',contentType:'application/json; charset=utf-8',success:function (data) { $('#paging_block').html(data); var pagerTop=$('#pager_top');if(pageIndex>1){$(pagerTop).html(data).show();}else{$(pagerTop).hide();}}});}</script>
+</div>
+            <div id="side_nav">
+                
+    <div id="cate_title_block">
+<div id="cate_title_title"><div class="cate_title">网站分类</div></div>
+<ul id="cate_item">
+<li id="cate_item_108698" onmouseover="cateShow(108698)" onmouseout="cateHidden(108698)">
+<a href="/cate/108698/">.NET技术(0)</a>
+</li>
+<li id="cate_item_2" onmouseover="cateShow(2)" onmouseout="cateHidden(2)">
+<a href="/cate/2/">编程语言(0)</a>
+</li>
+<li id="cate_item_108701" onmouseover="cateShow(108701)" onmouseout="cateHidden(108701)">
+<a href="/cate/108701/">软件设计(0)</a>
+</li>
+<li id="cate_item_108703" onmouseover="cateShow(108703)" onmouseout="cateHidden(108703)">
+<a href="/cate/108703/">Web前端(0)</a>
+</li>
+<li id="cate_item_108704" onmouseover="cateShow(108704)" onmouseout="cateHidden(108704)">
+<a href="/cate/108704/">企业信息化(0)</a>
+</li>
+<li id="cate_item_108705" onmouseover="cateShow(108705)" onmouseout="cateHidden(108705)">
+<a href="/cate/108705/">手机开发(0)</a>
+</li>
+<li id="cate_item_108709" onmouseover="cateShow(108709)" onmouseout="cateHidden(108709)">
+<a href="/cate/108709/">软件工程(0)</a>
+</li>
+<li id="cate_item_108712" onmouseover="cateShow(108712)" onmouseout="cateHidden(108712)">
+<a href="/cate/108712/">数据库技术(0)</a>
+</li>
+<li id="cate_item_108724" onmouseover="cateShow(108724)" onmouseout="cateHidden(108724)">
+<a href="/cate/108724/">操作系统(0)</a>
+</li>
+<li id="cate_item_4" onmouseover="cateShow(4)" onmouseout="cateHidden(4)">
+<a href="/cate/4/">其他分类(0)</a>
+</li>
+<li id="cate_item_0" onmouseover="cateShow(0)" onmouseout="cateHidden(0)">
+<a href="/cate/all/">所有随笔(142)</a>
+</li>
+<li id="cate_item_-1" onmouseover="cateShow(-1)" onmouseout="cateHidden(-1)">
+<a href="/comment/">所有评论(39)</a>
+</li>
+</ul>
+<div class="cate_bottom"></div>
+<div id="cate_sub_block"></div>
+<script type="text/javascript">var cateIdList = '108698,2,108701,108703,108704,108705,108709,108712,108724,4';aggSite.loadSubCategories();</script>
+</div>
+        <div class="l_s"></div>
+<p class="r_l_3" /><p class="r_l_2" /><p class="r_l_1" />
+<div class="w_l">
+<h4>相关分类</h4>
+<ul>
+<li><a href="/cate/108698/">.NET技术</a></li>
+<li><a href="/cate/108701/">软件设计</a></li>
+<li><a href="/cate/108703/">Web前端</a></li>
+<li><a href="/cate/108704/">企业信息化</a></li>
+<li><a href="/cate/108705/">手机开发</a></li>
+<li><a href="/cate/108709/">软件工程</a></li>
+<li><a href="/cate/108712/">数据库技术</a></li>
+<li><a href="/cate/108724/">操作系统</a></li>
+<li><a href="/cate/4/">其他分类</a></li>
+</ul>
+</div>
+<p class="r_l_1" /><p class="r_l_2" /><p class="r_l_3" />
+<div class="l_s"></div>
+<p class="r_l_3"></p><p class="r_l_2"></p><p class="r_l_1"></p>
+<div class="w_l">
+<h4>链接</h4>        
+<ul>
+    <li><a href="https://group.cnblogs.com/forum/public/" target="_blank">反馈或建议</a></li> 
+    <li><a href="//www.cnblogs.com/cmt/" target="_blank">官方博客</a></li>
+    <li><a href="/skins.aspx" target="_blank">博客模板</a></li>
+    <li><a href="http://www.blogjava.net/">Java博客</a></li>
+    <li><a href="http://www.cppblog.com/">C++博客</a></li>
+    <li><a href="//www.cnblogs.com/cmt/archive/2009/09/26/1574616.html">手机版</a></li>
+</ul>
+</div>
+<p class="r_l_1"></p><p class="r_l_2"></p><p class="r_l_3"></p>
+<div class="l_s"></div>
+<div id="user_stats"></div>
+<div class="l_s"></div>        
+<p class="r_l_3"></p><p class="r_l_2"></p><p class="r_l_1"></p>
+<div class="w_l">                
+<h4>统计信息</h4>
+<div id="site_stats"></div>      
+</div>
+<p class="r_l_1"></p><p class="r_l_2"></p><p class="r_l_3"></p>
+            </div>
+            <div id="side_right">
+                    <div id="search_block">
+                        <div class="side_search">
+                            <input type="text" id="zzk_q" class="search_input" onkeydown="return zzk_go_enter(event);" tabindex="3" /><input onclick="zzk_go()" type="button" class="search_btn" value="找找看" />
+                        </div>
+                        <div id="google_search" class="side_search">
+                            <input type="text" id="google_search_q" class="search_input" onkeydown="return google_search_enter(event);" /><input type="button" value="Google" class="search_btn" onclick="return google_search();" />
+                        </div>
+                    </div>
+                <div id="cnblogs_a1">
+                    <div id='div-gpt-ad-1547816814884-0' style='height:60px; width:468px;'>
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1547816814884-0'); });
+                        </script>
+                    </div>
+                </div>
+                <div id="cnblogs_b1" class="sidebar-image">
+                    <div id='div-gpt-ad-1546331539224-0' style='height:250px; width:300px;'>
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1546331539224-0'); });
+                        </script>
+                    </div>
+                </div>
+                <div id="ad_right_text" class="ad_right_text"></div>
+                <div id="side_right_block"></div>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <div>Powered by .NET Core on Kubernetes</div>
+            <div><a href="https://about.cnblogs.com/">关于博客园</a><a href="https://about.cnblogs.com/contact">联系我们</a><a href="https://about.cnblogs.com/ad">广告服务</a><a href="https://about.cnblogs.com/job">人才服务</a>&copy;2004-2020<a href="https://www.cnblogs.com/">博客园</a>保留所有权利<a href="http://www.beian.miit.gov.cn" target="_blank">沪ICP备09004260号</a></div>
+            <div><a href="https://ss.knet.cn/verifyseal.dll?sn=e131108110100433392itm000000&amp;ct=df&amp;a=1&amp;pa=0.25787803245785335" rel="nofollow" target="_blank"><img id="cnnic_img" src="//common.cnblogs.com/images/cnnic.png" alt="" width="64" height="23" /></a><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502001144" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="//common.cnblogs.com/images/ghs.png" alt="" /><span style="float:left;height:20px;line-height:20px;margin: 0 5px 0 5px; color:#939393;">沪公网安备 31011502001144号</span></a></div>
+        </div>
+    </div>
+</body>
+</html>

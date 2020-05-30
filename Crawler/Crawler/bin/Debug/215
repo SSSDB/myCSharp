@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="对奈飞（Netflix）的上云之旅及其云上运行进行梳理和总结，形成系列文章。本文为这系列文章的第一篇，介绍奈飞的总体上云历程。" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>​云中奈飞（一）：Netflix的上云之旅 - SammyLiu - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=KCO3_f2W_TC__-jZ7phSnmoFkQuWMJH2yAgA16eE3eY" />
+    <link id="MainCss" rel="stylesheet" href="/skins/sea/bundle-sea.min.css?v=Jpv_XRZqv7HnW0FXxHohZmb1TG6nYuWdNSwqJML5lHA" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/sammyliu/custom.css?v=CuyIe3RouBGbv&#x2B;e4dtxz77EuSbA=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea-mobile.min.css?v=GEzW0neGdNE-VMws0ftJENKA__n-moeEPmS2Y9XCJis" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/sammyliu/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/sammyliu/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/sammyliu/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=6bwfCY2e02dLOXNW99G2BHZkYFmw9QyYTWeJ-W-sudo"></script>
+    <script>
+        var currentBlogId = 207042;
+        var currentBlogApp = 'sammyliu';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'sea';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <script>loadPageBeginHtml();</script>
+    </div>
+    <!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/sammyliu/">世民谈云计算（微信公众号ID：SammyTalksAboutCloud）</a>
+<br>
+		
+（声明：本站文章仅代表作者个人观点，与作者所在公司无关。若对我的文章感兴趣，请关注我的微信公众号【ID：SammyTalksAboutCloud】，接收我的更新通知。）
+<p><img src="https://images2018.cnblogs.com/blog/697113/201808/697113-20180814140326081-298986818.png" alt="微信公众号ID：SammyTalksAboutCloud" /></p>
+
+	</div>
+</div>
+
+
+</div>
+
+<div id="mytopmenu">
+	
+		<div id="mylinks">
+<a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+ &nbsp;
+
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/sammyliu/">
+首页</a>
+ &nbsp;
+
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+ &nbsp;
+
+ &nbsp;
+
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/sammyliu/rss/">
+订阅</a>
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/sammyliu/rss/">
+    <img src="/skins/sea/images/xml.gif" alt="订阅" />
+</a>&nbsp;
+
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+
+</div>
+		<DIV id="mystats">随笔-
+183&nbsp;
+评论-
+710&nbsp;
+文章-
+49&nbsp;
+<!--trackbacks-<partial name="./Shared/_PingTrackCount.cshtml" model="BlogServer.Web.Models.DetailBlogPage" />-->
+
+</DIV>
+	
+</div>
+<div id="centercontent">
+	<div id="post_detail">
+<div class="post">
+	<h1 class = "postTitle">
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/sammyliu/p/12995447.html">​云中奈飞（一）：Netflix的上云之旅</a>
+</h1>
+	
+    <div id="cnblogs_post_description" style="display: none">
+        对奈飞（Netflix）的上云之旅及其云上运行进行梳理和总结，形成系列文章。本文为这系列文章的第一篇，介绍奈飞的总体上云历程。
+    </div>
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p>作者按：&nbsp;</p>
+<p>Netflix（译为奈飞/网飞）公司自1997年创立以来，已发展成为美国最大的互联网流媒体服务商。它从2008到2015年间长达七年的将其所有IT系统从自有数据中心迁移到AWS之上的旅程，在当时可谓前无古人的创举，对公有云的发展、传统企业上云及基于云的业务转型等都有很大的推动和促进作用。虽然已过去多年，有些东西已略微显得过时，但奈飞上云的理念、步骤、做法等，对当今企业上云及用云仍有很大的参考价值。&nbsp;</p>
+<p>因此，在接下来的几周内，笔者打算花上些许时间，对奈飞的上云之旅，及其云上运行，基于网上公开资料，从上云历程、云上架构、支撑团队、云上安全等维度做下梳理和总结，形成系列文章。它山之石，可以攻玉。本文为这系列文章的第一篇，介绍奈飞的总体上云历程。</p>
+<p>&nbsp;</p>
+<p>本文目录</p>
+<p>零、公司简介....................................... 1</p>
+<p>一、发端.............................................. 4</p>
+<p>二、验证.............................................. 6</p>
+<p>三、进行.............................................. 8</p>
+<p>四、完成.............................................. 11&nbsp;</p>
+<p>&nbsp;</p>
+<h1>零、公司简介</h1>
+<p>&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPniamuCZic70IWu3xr4JWbW1SOpJ9aibnlx8l9NYZVq5U0cMDW3yDa1UxQ/640?wx_fmt=png" alt="" data-backh="410" data-backw="578" data-ratio="0.7094155844155844" data-s="300,640" data-type="png" data-w="616"></p>
+<p>&nbsp;</p>
+<p>Netflix（https://www.netflix.com/）公司总部设在美国加利福尼亚州，是全世界最大的视频流媒体平台，在除中国大陆地区以外的所有国家和地区均提供视频点播服务，相当于国内的爱奇艺、优酷和腾讯视频等视频网站。&nbsp;</p>
+<p>1997年，当Reed Hastings和Marc Randolph创建&nbsp;Netflix时，这家公司唯一业务是DVD邮购业务。2002年上市，股票发行价为15美元；2007年开始发展流媒体业务；2013年，发布其首部原创电视剧《纸牌屋》；2016年宣布全球化，全世界200多个国家和地区可订阅Netflix观看电影电视剧。&nbsp;2017年，Netflix用户数量超过美国有线电视用户总数。如今，Netflix的股价是419美元，已成为世界上大型的电视剧和电影制片公司之一、美国最大的互联网流媒体服务商，在世界范围内拥有很强的影响力，高峰时刻占据了互联网流媒体流量的33%。&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPLWolljxwZB0RYKXIp3oFwlG5TmHkpwKCYd0zFf11LE41ENl7Vxuqug/640?wx_fmt=png" alt="" data-backh="404" data-backw="539" data-ratio="0.7495361781076066" data-s="300,640" data-type="png" data-w="539"></p>
+<p>&nbsp;</p>
+<p>除了商业上非常成功外，Netflix在技术上也非常成功，它虽然是家娱乐公司，但实际上是一家技术公司。从2008年开始，直到2015年底，它花了整整七年时间，把公司整套IT系统搬到了AWS上。这可谓前无来者。除此之外，Netflix在分布式系统开源上具有巨大的影响力，其开源项目叫做Netflix OSS(Open Source Software)，涵盖范围基本包括了业界绝大部分分布式系统领域，包括但不限于：&nbsp;</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公共运行时服务及库，比如Eureka, Ribbon, Hystrix</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大数据，比如Genie</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;构建和发布工具，比如Asgard/Spinnaker</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据持久化，比如EVCache</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可观察性、可靠性和性能，比如Simian Army&nbsp;</p>
+<p>&nbsp;</p>
+<h1>一、发端</h1>
+<p>&nbsp;</p>
+<p>Netflix的上云之旅始于2008年8月。从公开资料来看，当时主要有两个驱动力促使其上云：&nbsp;</p>
+<p>（1）发生了系统宕机。&nbsp;</p>
+<p>当时，Netflix的IT系统运行在高端昂贵的IBM服务器、Oracle数据库和SAN存储搭建的平台之上。某次，因为SAN存储硬件故障导致的数据库宕机，使得Netflix的DVD配送服务不得不停止了3天。这个故障使得公司管理层开始意识到，由IT团队利用昂贵的平台来保证系统可用性的做法存在问题，更应该从应用层面去保障系统可用性。因此，需考虑IT系统从传统垂直扩展的带有单点故障的架构，转向高可用、水平扩展的分布式架构。与此同时，他们开始思考是否可以利用刚刚出现的低成本云基础设施来替代昂贵传统IT基础设施来支撑需具备高可用性的应用。</p>
+<p>&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXP6F6Og8iaW8LCNVh6Fd6pGtRFTSHRQ9lIpCPr1JyhkibponQ93RE75guA/640?wx_fmt=png" alt="" data-backh="121" data-backw="578" data-ratio="0.210016155088853" data-s="300,640" data-type="png" data-w="619"></p>
+<p>&nbsp;</p>
+<p>（2）新业务带来巨大数据中心扩容压力。&nbsp;</p>
+<p>Netflix的传统DVD寄送服务的服务模式下，客户浏览Netflix网站选择DVD，然后公司开始寄送。因为受到DVD来回寄送速度的限制，通常是以周为周期给客户寄送DVD。因此，这种传统业务模式对IT系统的业务压力较轻。&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXP4ewUeOMZ4LWMfn7Y2dgXAvbxLGYHPyfYgaLq1P2u7iaWr2QDGUb9voA/640?wx_fmt=png" alt="" data-backh="309" data-backw="578" data-ratio="0.5351437699680511" data-s="300,640" data-type="png" data-w="626"></p>
+<p>传统DVD寄送业务模式</p>
+<p>&nbsp;</p>
+<p>尽管DVD业务增长迅速，但2007年Netflix仍然决定推出第一款流媒体产品&ldquo;Watch Now&rdquo;来革新其业务。这种业务也是它后来蓬勃发展的关键因素之一。这种新服务模式下，用户与Netflix网站之间的交互频率是传统DVD寄送业务下交互频率的100倍甚至不止。&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPn6jh7kfxmlcBJXkV5ib7VkDReEcXeMicRhicIVeMiaJRkTxnPrDUgBVASQ/640?wx_fmt=png" alt="" data-backh="313" data-backw="578" data-ratio="0.5408" data-s="300,640" data-type="png" data-w="625"></p>
+<p>流媒体服务模式</p>
+<p>&nbsp;</p>
+<p>新模式下，用户每周看的视频数量是之前的十倍，而每个视频对数据中心中的IT系统产生的流量则是百倍，因此每个用户对IT系统产生的流量是之前的千倍。也就是说，只要0.1%的用户从传统模式转向新模式，那IT系统的容量就必须翻倍。其实这种规律也很常见。即使用户并没有显著增长，只要因为业务模式的变化，对IT系统的压力也可能成倍增加。&nbsp;</p>
+<p>这就要求Netflix找到一种快速扩容数据中心的方法，因为根据当时的业务预测，其用户很快就会转向在线流媒体服务模式。时间来到2009年，随着新业务的发展，Netflix面临两个选择：自建数据中心，或利用其业务竞争对手亚马逊于2006年才发布的AWS云。前者需要大量前期资金投入，并且未来的容量需求无法预测且是变化不定的，而后者则是在视频流领域的最大竞争对手Amazon的云上开展业务。Netflix决定选择后者。他们认为，相比在不实际产生业务价值的数据中心上做前期巨大投入，将资金投入在视频内容和开发人员身上会更有价值。</p>
+<p>&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPaoPrJ6Vly2RYRJFr6BdoXKbv0DhtbXOROmEpLLQQqibBtHgcBgUa9rg/640?wx_fmt=png" alt="" data-backh="210" data-backw="578" data-ratio="0.36363636363636365" data-s="300,640" data-type="png" data-w="627"></p>
+<p>&nbsp;</p>
+<h1>二、验证</h1>
+<p>于是这一年（2009年），Netflix开始研究利用AWS云来开展业务的各种风险，包括业务竞争风险、规模性风险、商业风险和公关风险等。就业务竞争风险，Netflix与AWS沟融了AWS是如何与Amazon Premier做业务分离的。然后开展实验去验证AWS上的资源快速扩容能力。Netflix还与AWS签订了首批企业许可协议，这种协议下Netflix不需要通过授权信用卡方式来使用AWS资源，而信用卡授权是当时大多数人在AWS上消费时使用的主要方式。&nbsp;</p>
+<p>随着两家合作消息的传开，2010年4月，纽约时报还发表了一篇关于Netflix和AWS业务的文章，说两者将进行业务合作。请注意其中的&ldquo;peculiar（特有）&ldquo;一词，表示那时候企业上云是新闻，而上到竞争对手的云上更是新闻。&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPJbkia2xakpVKdYG1bKziauvj0N1lu3SIsqyCNheXMQDiaFjviaJxmjvz3g/640?wx_fmt=png" alt="" data-ratio="0.9415481832543444" data-s="300,640" data-type="png" data-w="633"></p>
+<p>&nbsp;</p>
+<p>当时Netflix还咨询了一些业界专家，专家们认为这种做法非常疯狂，因为当时很少有企业这么做，而且企业业务上云在当时还是一个非常不成熟的策略。但Netflix决定坚持下去，成为首批上云企业客户之一。&nbsp;</p>
+<p>接下来，Netflix实验性地将一些没有真正面向客户的应用迁移到AWS上。首先从电影编码开始，当时其只有数据中心没有足够的容量来容纳编码服务器。有一次Netflix申请3000台服务器，结果AWS一个小时内就交付了，这就验证AWS资源交付的弹性和及时性。而且随着这项工作的完成，不用的机器即被释放，这证明了云计算的&ldquo;按需使用和付费&rdquo;特征。</p>
+<p>接下来验证视频服务QoS日志上云。随着进入数据中心数据库的流量越来越多，这些流量正在溢出，而且自己的机房缺乏足够的存储空间来保存想要的信息。于是，Netflix利用S3来存储数据，利用EMR来处理数据。Netflix是Hadoop早期用户之一，曾与AWS合作将Hive作为基于EMR的处理选项。</p>
+<p>&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPm9saeuNgMP3vl3lFuUkXE6tuIKhic9ZicNRJ5EcZz3qfX0orYdtx4kyQ/640?wx_fmt=png" alt="" data-backh="166" data-backw="578" data-ratio="0.2864" data-s="300,640" data-type="png" data-w="625"></p>
+<p>&nbsp;</p>
+<p>到2010年，可行性验证基本完成，Netflix认为上云看起来是可行的。于是2011年，Netflix作出决定，不再扩容自有IDC。</p>
+<p>&nbsp;</p>
+<h1>三、进行</h1>
+<p>&nbsp;</p>
+<p>Netflix开始真正地要在AWS云上起飞了。从最简单的API服务开始，然后是最简单的Web网页，然后是更多的API和网页。</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPicpiarfwkyhs98wficiaRSG0IwJhVn3iajwbaRlYXabmb6vFibXr29weP56Q/640?wx_fmt=png" alt="" data-ratio="0.19808306709265175" data-s="300,640" data-type="png" data-w="626" data-backw="578" data-backh="114"></p>
+<p>&nbsp;</p>
+<p>到2010年底，Netflix成功地将网站前端都迁移到了AWS上，但后端依然在自有数据中心内。</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPjPEVocgd3mooD7BB9kaq2fuZYew5OAOSBaLbUU2C652Spia5jUibmia3Q/640?wx_fmt=png" alt="" data-backh="291" data-backw="578" data-ratio="0.5040128410914928" data-s="300,640" data-type="png" data-w="623"></p>
+<p>&nbsp;</p>
+<p>用户访问流量还是进入其自有数据中心，但是有选择地将部分流量利用HTTP Redirect将请求转向AWS Cloud。这其实也就是我们现在常常提到的金丝雀模式，通过导入部分用户到新环境上来验证和逐步地完成系统迁移。</p>
+<p>&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPIMO0VQTz1aobYwPaBBUUHF0DG1icEH9Sje33kJ9NhGxiaXxSWWweb84g/640?wx_fmt=png" alt="" data-ratio="0.536115569823435" data-s="300,640" data-type="png" data-w="623" data-backw="578" data-backh="310"></p>
+<p>&nbsp;</p>
+<p>接下来是数据迁移。2010年的主要工作之一，是将主数据系统放在数据中心，将副本放在云中，并将数据从本地持续地同步到云中。</p>
+<p>&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPawhzIxPWWUtXesn0rkBsIZXYzrLwLCHEXKr4fCgHatG8rjeXpNNdug/640?wx_fmt=png" alt="" data-backh="307" data-backw="578" data-ratio="0.5313001605136437" data-s="300,640" data-type="png" data-w="623"></p>
+<p>&nbsp;</p>
+<p>2011年，Netflix决定将所有数据放到云上。其中一个问题是如何做数据备份。Netflix没有采用当时常见的利用本地数据中心中的磁带来备份云中数据的做法，而是充分利用了S3的安全性和持久性，用不同的账户在不同的AWS区域中创建S3存储桶，然后将生产数据导入生产区域S3存储桶，再经过压缩和加密并传送到容灾区域的桶中。利用不同的账户，主要是从安全角度考虑。后来，AWS发布了Glacier后，Netflix利用它来做长期归档的数据存储。</p>
+<p>&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPsmZWOg6M5iadbHDLKVvbGFiayo85nH46hC8Q8abvLiczvnaVWGSTgEKIw/640?wx_fmt=png" alt="" data-backh="281" data-backw="578" data-ratio="0.4864" data-s="300,640" data-type="png" data-w="625">&nbsp;</p>
+<p>&nbsp;</p>
+<p>到2015年，除了计费和账单系统外，其余所有系统都已经迁移到AWS上了。到2016年1月4日，Netflix完成了最后这两个系统的迁移，详细信息请参加其公司博客https://netflixtechblog.com/netflix-billing-migration-to-aws-451fba085a4。</p>
+<p>&nbsp;</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXP8Oy1Xt9RYBl3zcYXABjSO6gGfLKaClRWICblVOezvoIGHGeFGvSULw/640?wx_fmt=png" alt="" data-ratio="0.5463414634146342" data-s="300,640" data-type="png" data-w="615" data-backw="578" data-backh="316"></p>
+<p>&nbsp;</p>
+<h1>四、完成</h1>
+<p>&nbsp;</p>
+<p>2016年2月，Netflix宣布其上云迁移工作全部完成。这一年，Netflix的用户数是2008年开始上云迁移时候的8倍，而用户的月度观看视频数则有几千倍的增长，用户遍布全球超过130个国家，Netflix也成为了一家国际化视频服务提供商。</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPMxALC6qP4b2MSBtVMniaK61MjDydibc8eHOicNTjeT4iauRicSj5GZJHhwQ/640?wx_fmt=png" alt="" data-ratio="0.5893719806763285" data-s="300,640" data-type="png" data-w="621"></p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPjoCkKQDvPPDiaZQvnAlLZveOvIOhSVGnNtibzJ70JfMojYPY0MicH84PQ/640?wx_fmt=png" alt="" data-ratio="0.6944" data-s="300,640" data-type="png" data-w="625"></p>
+<p>&nbsp;</p>
+<p>到2017年，除了CDN由其自建外，Netflix使用AWS来满足其几乎所有计算和存储需求，包括数据库、分析、建议引擎、视频转码等数百种功能。而且，Netflix系统的可用性在持续增加，正在不断接近99.99%的既定目标。</p>
+<ul class=" list-paddingleft-2">
+<li>
+<p>Netflix的视频服务在高峰时段占据了高达37%的Internet流量。相比之下，YouTube&nbsp;仅占到15.6%，网页浏览约&nbsp;6%, Facebook约2.7%, Amazon Instant Video&nbsp;约2.0%。</p>
+</li>
+<li>
+<p>在AWS上共利用超过10万个&nbsp;EC2 Instances&nbsp;的80万CPU Cores，且在此基础上有约&nbsp;20%&nbsp;的波动。</p>
+</li>
+<li>
+<p>在每个服务区域上的&nbsp;AWS Elastic Load Balancing&nbsp;的流量超过&nbsp;50Gbps</p>
+</li>
+<li>
+<p>在&nbsp;S3&nbsp;上存储和管理超过15亿个对象的&nbsp;60 PB&nbsp;的数据。其中每天要丢弃超过&nbsp;400TB&nbsp;的过期数据以及新增&nbsp;600TB&nbsp;的数据。</p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>2016年Netflix在AWS上的系统架构：</p>
+<p><img class="rich_pages" src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrREOUX9ZI7WNjCTNEeoZqXPdtZYhibZxRqdZ8mLckWbEZURJiazuuB8WHQQib3GoicqicyzmPC3GwOQnVw/640?wx_fmt=png" alt="" data-ratio="0.7275641025641025" data-s="300,640" data-type="png" data-w="624"></p>
+<p>尽管降低成本支出并不是Netflix上云的主要出发点之一，但是实际上，现在每个视频的播放成本是当初利用自有数据中心的几分之一，这是一种非常可观的额外收益。这主要归功于云的弹性，使得Netflix可以持续地优化实例类型，近乎实时地增加或减少所用的资源，而不需要维持大规模的备用容量，以及公有云的规模不断扩大带来的单位成本下降。&nbsp;</p>
+<p>那为什么需要7年时间才能完成上云迁移呢？这是因为全业务上云是一项艰巨的工作，需要做好多的艰难决策。可以想到的是，最简单的方式是将所有系统缘分不断地搬到云上，但是随着系统一起搬过去的还有你在传统数据中心中遇到的所有问题和限制。因此，Netflix选择了一条另外的道路，重构所有系统，彻底改变公司IT运营方式，将单体应用改变为微服务架构应用、重构数据模型、使用NoSQL数据库。将过去那种预算严格受控制、版本发布严格受管控、花几周时间来做物理容量扩容的传统方式，改变为持续集成和发布、技术团队独立做决策、基于松耦合DevOps环境的新方式。这种方式使得Netflix花了七年时间才完成上云之旅，但是正是这种转变，也使得它成为了一家国际化的网络视频服务提供商。&nbsp;</p>
+<p>&nbsp;</p>
+<p>参考资料：</p>
+<ul class=" list-paddingleft-2">
+<li>
+<p>复盘Netflix发展史：如何用20年成为一家千亿美元公司？，克鲁斯2018年5月14日。https://www.gelonghui.com/p/179693</p>
+</li>
+<li>
+<p>Completing the Netflix Cloud Migration，https://media.netflix.com/en/company-blog/completing-the-netflix-cloud-migration，2016.1</p>
+</li>
+<li>
+<p>YouTube video，Globally Distributed Cloud Applications at Netflix，October 2012，Adrian Cockcro</p>
+</li>
+<li>
+<p>Migrating to Cloud - Lessons from Netflix, Brought Up to Date，Adrian Cockcroft，https://media.netflix.com/en/company-blog/completing-the-netflix-cloud-migration</p>
+</li>
+<li>
+<p>Companies Slowly Join Cloud-Computing，By&nbsp;<span>Brad Stone&nbsp;and&nbsp;<span>Ashlee Vance，https://www.nytimes.com/2010/04/19/technology/19cloud.html</span></span></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>感谢您的阅读，欢迎关注我的微信公众号：</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/ibOaboJGeVrRyeJlFTfQZSuPbibz5RyCBgyKs5VcucqyKqE11e5rLsAUuJ0jz1rDPnwav00QFW1btsaFOKfo00zA/640?wx_fmt=jpeg" alt="" data-ratio="0.9665271966527197" data-type="jpeg" data-w="239"></p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+	<div class="postDesc">posted on 
+<span id="post-date">2020-05-30 22:49</span>&nbsp;
+<a href="https://www.cnblogs.com/sammyliu/">SammyLiu</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12995447" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12995447);return false;">收藏</a></div>
+</div>
+
+
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 207042, cb_blogApp = 'sammyliu', cb_blogUserGuid = '7fb78d04-4675-e411-b908-9dcfd8948a71';
+    var cb_entryId = 12995447, cb_entryCreatedDate = '2020-05-30 22:49', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;"></div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div></div>
+
+
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script></DIV>
+	
+</div>
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a>
+	Copyright &copy; 2020 SammyLiu
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>
