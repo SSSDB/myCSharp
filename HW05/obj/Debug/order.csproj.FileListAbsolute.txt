@@ -1,0 +1,6 @@
+C:\Users\86150\Desktop\HW05\bin\Debug\test1.exe.config
+C:\Users\86150\Desktop\HW05\bin\Debug\test1.exe
+C:\Users\86150\Desktop\HW05\bin\Debug\test1.pdb
+C:\Users\86150\Desktop\HW05\obj\Debug\order.csprojAssemblyReference.cache
+C:\Users\86150\Desktop\HW05\obj\Debug\test1.exe
+C:\Users\86150\Desktop\HW05\obj\Debug\test1.pdb
