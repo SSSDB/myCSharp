@@ -1,0 +1,22 @@
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\bin\Debug\test1Tests1.dll
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\bin\Debug\test1Tests1.pdb
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\bin\Debug\test1.exe
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\bin\Debug\test1.pdb
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\bin\Debug\test1.exe.config
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\obj\Debug\order system test.csprojAssemblyReference.cache
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\obj\Debug\order system test.csproj.CopyComplete
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\obj\Debug\test1Tests1.dll
+C:\Users\86150\Desktop\HW2\HW06\test1Tests1\obj\Debug\test1Tests1.pdb
+C:\Users\86150\Desktop\HW2\HW06\test\bin\Debug\test1Tests1.dll
+C:\Users\86150\Desktop\HW2\HW06\test\bin\Debug\test1Tests1.pdb
+C:\Users\86150\Desktop\HW2\HW06\test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\86150\Desktop\HW2\HW06\test\bin\Debug\test1.exe
+C:\Users\86150\Desktop\HW2\HW06\test\bin\Debug\test1.pdb
+C:\Users\86150\Desktop\HW2\HW06\test\bin\Debug\test1.exe.config
+C:\Users\86150\Desktop\HW2\HW06\test\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\86150\Desktop\HW2\HW06\test\obj\Debug\order system test.csprojAssemblyReference.cache
+C:\Users\86150\Desktop\HW2\HW06\test\obj\Debug\order system test.csproj.CopyComplete
+C:\Users\86150\Desktop\HW2\HW06\test\obj\Debug\test1Tests1.dll
+C:\Users\86150\Desktop\HW2\HW06\test\obj\Debug\test1Tests1.pdb
