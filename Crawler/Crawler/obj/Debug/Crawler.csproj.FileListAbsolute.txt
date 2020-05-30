@@ -1,9 +1,0 @@
-C:\Users\86150\Desktop\Crawler\Crawler\bin\Debug\Crawler.exe.config
-C:\Users\86150\Desktop\Crawler\Crawler\bin\Debug\Crawler.exe
-C:\Users\86150\Desktop\Crawler\Crawler\bin\Debug\Crawler.pdb
-C:\Users\86150\Desktop\Crawler\Crawler\obj\Debug\Crawler.csprojAssemblyReference.cache
-C:\Users\86150\Desktop\Crawler\Crawler\obj\Debug\CrawlerForm.Form1.resources
-C:\Users\86150\Desktop\Crawler\Crawler\obj\Debug\Crawler.Properties.Resources.resources
-C:\Users\86150\Desktop\Crawler\Crawler\obj\Debug\Crawler.csproj.GenerateResource.cache
-C:\Users\86150\Desktop\Crawler\Crawler\obj\Debug\Crawler.exe
-C:\Users\86150\Desktop\Crawler\Crawler\obj\Debug\Crawler.pdb
