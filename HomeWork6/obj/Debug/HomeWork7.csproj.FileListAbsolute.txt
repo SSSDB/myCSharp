@@ -1,0 +1,10 @@
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\obj\Debug\HomeWork7.csprojAssemblyReference.cache
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\obj\Debug\HomeWork6.Properties.Resources.resources
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\obj\Debug\HomeWork7.csproj.GenerateResource.cache
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\obj\Debug\HomeWork7.csproj.CoreCompileInputs.cache
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\obj\Debug\HomeWork6.exe
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\obj\Debug\HomeWork6.pdb
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\bin\Debug\HomeWork6.exe.config
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\bin\Debug\HomeWork6.exe
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\bin\Debug\HomeWork6.pdb
+D:\soft\vs2017安装\vs 编写项目文件\HomeWork6\HomeWork6\obj\Debug\HomeWork6.Form1.resources
